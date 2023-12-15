@@ -1,0 +1,26 @@
+[{
+  "_id": {
+    "$oid": "657c7952139c50b994e5338b"
+  },
+  "accountId": {
+    "$oid": "657c6f1af52d1ff2be35e6af"
+  },
+  "products": [
+    {
+      "productId": {
+        "$oid": "657c706f70381ed39254c60f"
+      },
+      "amount": 3,
+      "_id": {
+        "$oid": "657c7952139c50b994e5338c"
+      }
+    }
+  ],
+  "totalPrice": 450000,
+  "createdAt": {
+    "$date": "2023-12-15T16:05:38.169Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-15T16:05:38.169Z"
+  }
+}]
