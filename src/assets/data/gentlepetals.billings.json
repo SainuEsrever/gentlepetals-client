@@ -1,0 +1,19 @@
+[{
+  "_id": {
+    "$oid": "657c7c8a854aedc5fb0aaf97"
+  },
+  "orderId": {
+    "$oid": "657c76d3ca3c77243cb7d4ee"
+  },
+  "accountId": {
+    "$oid": "657c6f1af52d1ff2be35e6af"
+  },
+  "totalPrice": 300000,
+  "status": "pending",
+  "createdAt": {
+    "$date": "2023-12-15T16:19:22.190Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-15T16:19:22.190Z"
+  }
+}]

@@ -1,0 +1,114 @@
+[{
+  "_id": {
+    "$oid": "657c6f11f52d1ff2be35e6ac"
+  },
+  "firstName": "sang",
+  "lastName": "Pham The",
+  "email": "sang21406@st.uel.edu.vn",
+  "password": "$2a$10$FAi42mqbIyejuUmJ5kx5ne.gnLJL0Up4fqcPaUiG4y7V6cptkDh5q",
+  "phoneNumber": "0799298379",
+  "role": "admin",
+  "totalOrder": 0,
+  "status": "active",
+  "createdAt": {
+    "$date": "2023-12-15T15:21:53.273Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-15T15:21:53.273Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "657c6f1af52d1ff2be35e6af"
+  },
+  "firstName": "sang",
+  "lastName": "Pham The",
+  "email": "sang@st.uel.edu.vn",
+  "password": "$2a$10$/wPLryL1ZgPK3m5ifpm.t.G/kw00PZT5EblVEwDnPLpcozQgZ5n5m",
+  "phoneNumber": "0799298379",
+  "role": "member",
+  "totalOrder": 0,
+  "status": "active",
+  "createdAt": {
+    "$date": "2023-12-15T15:22:02.191Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-15T15:22:02.191Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "657c6f25f52d1ff2be35e6b2"
+  },
+  "firstName": "sang",
+  "lastName": "Pham The",
+  "email": "huentk21406@st.uel.edu.vn",
+  "password": "$2a$10$fXw0QBbP3Afj5MQG2KdZE.ay.LJhEKiQlDN1r/WkkgONzgmp923We",
+  "phoneNumber": "0799298379",
+  "role": "member",
+  "totalOrder": 0,
+  "status": "active",
+  "createdAt": {
+    "$date": "2023-12-15T15:22:13.662Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-15T15:22:13.662Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "657c6f2ff52d1ff2be35e6b5"
+  },
+  "firstName": "sang",
+  "lastName": "Pham The",
+  "email": "mypt21406@st.uel.edu.vn",
+  "password": "$2a$10$2njB1byBpBwL6OFEiUY1lubvkJY3xMRR7DkgkqW2e2OHNTQzjjP4u",
+  "phoneNumber": "0799298379",
+  "role": "member",
+  "totalOrder": 0,
+  "status": "active",
+  "createdAt": {
+    "$date": "2023-12-15T15:22:23.647Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-15T15:22:23.647Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "657c6f35f52d1ff2be35e6b8"
+  },
+  "firstName": "sang",
+  "lastName": "Pham The",
+  "email": "khiemtn21406@st.uel.edu.vn",
+  "password": "$2a$10$SW1aERqbP98nNJSRKXzioeZstfgJp4yGHhZ1scdiTuQQ5nH2zMlOG",
+  "phoneNumber": "0799298379",
+  "role": "member",
+  "totalOrder": 0,
+  "status": "active",
+  "createdAt": {
+    "$date": "2023-12-15T15:22:29.836Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-15T15:22:29.836Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "657c6f3cf52d1ff2be35e6bb"
+  },
+  "firstName": "sang",
+  "lastName": "Pham The",
+  "email": "tuanphm21406@st.uel.edu.vn",
+  "password": "$2a$10$xVOpY4Is9x01kr/.ktOxEuZRgmaFi06XgGGQsQ/YW7wtnIdOHO4pK",
+  "phoneNumber": "0799298379",
+  "role": "member",
+  "totalOrder": 0,
+  "status": "active",
+  "createdAt": {
+    "$date": "2023-12-15T15:22:36.186Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-15T15:22:36.186Z"
+  }
+}]

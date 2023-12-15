@@ -1,0 +1,28 @@
+[{
+  "_id": {
+    "$oid": "657c76d3ca3c77243cb7d4ee"
+  },
+  "accountId": {
+    "$oid": "657c6f1af52d1ff2be35e6af"
+  },
+  "products": [
+    {
+      "productId": {
+        "$oid": "657c6f1af52d1ff2be35e6af"
+      },
+      "amount": 2,
+      "_id": {
+        "$oid": "657c76d3ca3c77243cb7d4ef"
+      }
+    }
+  ],
+  "totalPrice": 300000,
+  "address": "Ký túc xá khu B",
+  "status": "pending",
+  "createdAt": {
+    "$date": "2023-12-15T15:54:59.250Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-15T15:54:59.250Z"
+  }
+}]

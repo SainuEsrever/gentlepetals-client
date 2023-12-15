@@ -1,0 +1,114 @@
+[{
+  "_id": {
+    "$oid": "657c706f70381ed39254c60f"
+  },
+  "name": "Hoa Đại Hội 1",
+  "amount": 29,
+  "price": 150000,
+  "description": "Sang trọng",
+  "categoryId": {
+    "$oid": "657c6fb0f52d1ff2be35e6c3"
+  },
+  "createdAt": {
+    "$date": "2023-12-15T15:27:43.963Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-15T15:30:31.748Z"
+  },
+  "image": "images/products/hoadaihoi1.jpg"
+},
+{
+  "_id": {
+    "$oid": "657c71a670381ed39254c618"
+  },
+  "name": "Hoa Đại Hội 2",
+  "amount": 13,
+  "price": 200000,
+  "image": "images/products/hoadaihoi2.jpg",
+  "description": "Quý Phái",
+  "categoryId": {
+    "$oid": "657c6fb0f52d1ff2be35e6c3"
+  },
+  "createdAt": {
+    "$date": "2023-12-15T15:32:54.107Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-15T15:32:54.107Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "657c71d870381ed39254c61c"
+  },
+  "name": "Hoa Tình Nhân 1",
+  "amount": 18,
+  "price": 125000,
+  "image": "images/products/hoatinhnhan1.jpg",
+  "description": "Ý Nghĩa",
+  "categoryId": {
+    "$oid": "657c6fc1f52d1ff2be35e6c6"
+  },
+  "createdAt": {
+    "$date": "2023-12-15T15:33:44.823Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-15T15:33:44.823Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "657c724670381ed39254c620"
+  },
+  "name": "Hoa Tình Nhân 2",
+  "amount": 15,
+  "price": 125000,
+  "image": "images/products/hoatinhnhan2.jpg",
+  "description": "Dễ Thương",
+  "categoryId": {
+    "$oid": "657c6fc1f52d1ff2be35e6c6"
+  },
+  "createdAt": {
+    "$date": "2023-12-15T15:35:34.802Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-15T15:35:34.802Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "657c727170381ed39254c624"
+  },
+  "name": "Hoa Khai Trương 1",
+  "amount": 15,
+  "price": 175000,
+  "image": "images/products/hoakhaitruong1.jpg",
+  "description": "Long Trọng",
+  "categoryId": {
+    "$oid": "657c6fccf52d1ff2be35e6c9"
+  },
+  "createdAt": {
+    "$date": "2023-12-15T15:36:17.084Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-15T15:36:17.084Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "657c72e770381ed39254c628"
+  },
+  "name": "Hoa Khai Trương 2",
+  "amount": 15,
+  "price": 200000,
+  "image": "images/products/hoakhaitruong2.jpg",
+  "description": "Sang Chảnh",
+  "categoryId": {
+    "$oid": "657c6fccf52d1ff2be35e6c9"
+  },
+  "createdAt": {
+    "$date": "2023-12-15T15:38:15.384Z"
+  },
+  "updatedAt": {
+    "$date": "2023-12-15T15:38:15.384Z"
+  }
+}]
