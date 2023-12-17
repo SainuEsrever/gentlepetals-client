@@ -8,26 +8,17 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { AppRoutingModule } from './app-routing.module';
 import { FooterComponent } from './components/footer/footer.component';
-import { Dashboard1Component } from './components/dashboard/dashboard1/dashboard1.component';
-import { Dashboard2Component } from './components/dashboard/dashboard2/dashboard2.component';
-import { Dashboard3Component } from './components/dashboard/dashboard3/dashboard3.component';
-import { DashboardComponent } from './components/dashboard/dashboard/dashboard.component';
-import { EditProfileComponent } from './components/dashboard/edit-profile/edit-profile.component';
-import { ChangePasswordComponent } from './components/dashboard/change-password/change-password.component';
 import { DashboardDashboardComponent } from './components/dashboard-dashboard/dashboard-dashboard.component';
+import { HomepageComponent } from './components/homepage/homepage.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     FooterComponent,
-    Dashboard1Component,
-    Dashboard2Component,
-    Dashboard3Component,
-    DashboardComponent,
-    EditProfileComponent,
-    ChangePasswordComponent,
     DashboardDashboardComponent
+    HomepageComponent
   ],
   imports: [
     BrowserModule,
