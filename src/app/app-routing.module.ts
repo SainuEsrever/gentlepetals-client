@@ -1,14 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
+import { HomepageComponent } from './components/homepage/homepage.component';
 
-import {HomeComponent} from './components/home.component';
+
 
 
 const routes : Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
 
-  {path : 'home', component: HomeComponent},
+  {path : 'home', component: HomepageComponent},
 ]
 
 
