@@ -8,21 +8,21 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { AppRoutingModule } from './app-routing.module';
 import { FooterComponent } from './components/footer/footer.component';
-import { Dashboard1Component } from './components/dashboard/dashboard1/dashboard1.component';
-import { Dashboard2Component } from './components/dashboard/dashboard2/dashboard2.component';
-import { Dashboard3Component } from './components/dashboard/dashboard3/dashboard3.component';
-import { DashboardComponent } from './components/dashboard/dashboard/dashboard.component';
-import { EditProfileComponent } from './components/dashboard/edit-profile/edit-profile.component';
-import { ChangePasswordComponent } from './components/dashboard/change-password/change-password.component';
 import { DashboardDashboardComponent } from './components/dashboard-dashboard/dashboard-dashboard.component';
+<<<<<<< HEAD
 import { DashboardEditProfileComponent } from './components/dashboard-edit-profile/dashboard-edit-profile.component';
 import { DashboardChangePasswordComponent } from './components/dashboard-change-password/dashboard-change-password.component';
+=======
+import { HomepageComponent } from './components/homepage/homepage.component';
+
+>>>>>>> a0dd573f4c8bad5d9901b0700006aff6f1f13a58
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     FooterComponent,
+<<<<<<< HEAD
     Dashboard1Component,
     Dashboard2Component,
     Dashboard3Component,
@@ -32,6 +32,10 @@ import { DashboardChangePasswordComponent } from './components/dashboard-change-
     DashboardDashboardComponent,
     DashboardEditProfileComponent,
     DashboardChangePasswordComponent
+=======
+    DashboardDashboardComponent
+    HomepageComponent
+>>>>>>> a0dd573f4c8bad5d9901b0700006aff6f1f13a58
   ],
   imports: [
     BrowserModule,
