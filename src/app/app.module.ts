@@ -15,6 +15,8 @@ import { DashboardComponent } from './components/dashboard/dashboard/dashboard.c
 import { EditProfileComponent } from './components/dashboard/edit-profile/edit-profile.component';
 import { ChangePasswordComponent } from './components/dashboard/change-password/change-password.component';
 import { DashboardDashboardComponent } from './components/dashboard-dashboard/dashboard-dashboard.component';
+import { DashboardEditProfileComponent } from './components/dashboard-edit-profile/dashboard-edit-profile.component';
+import { DashboardChangePasswordComponent } from './components/dashboard-change-password/dashboard-change-password.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { DashboardDashboardComponent } from './components/dashboard-dashboard/da
     DashboardComponent,
     EditProfileComponent,
     ChangePasswordComponent,
-    DashboardDashboardComponent
+    DashboardDashboardComponent,
+    DashboardEditProfileComponent,
+    DashboardChangePasswordComponent
   ],
   imports: [
     BrowserModule,
