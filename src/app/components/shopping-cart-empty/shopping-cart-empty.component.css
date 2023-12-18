@@ -1,0 +1,75 @@
+.qun-l-gi-hng-trng {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .qun-l-gi-hng-trng .div {
+    background-color: #ffffff;
+    overflow: hidden;
+    width: 1440px;
+    height: 1024px;
+    position: relative;
+  }
+  
+  .qun-l-gi-hng-trng .hnh-gi-hng-trng {
+    position: absolute;
+    width: 602px;
+    height: 459px;
+    top: 141px;
+    left: 420px;
+  }
+  
+  .qun-l-gi-hng-trng .gi-hng-trng {
+    position: absolute;
+    width: 600px;
+    height: 343px;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+  }
+  
+  .qun-l-gi-hng-trng .text-wrapper {
+    position: absolute;
+    top: 377px;
+    left: 87px;
+    font-family: "Noto Sans-Bold", Helvetica;
+    font-weight: 700;
+    color: #ffc0cb;
+    font-size: 60px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .qun-l-gi-hng-trng .nt-mua-sm {
+    position: absolute;
+    width: 269px;
+    height: 68px;
+    top: 634px;
+    left: 587px;
+  }
+  
+  .qun-l-gi-hng-trng .overlap-group {
+    position: relative;
+    width: 267px;
+    height: 68px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    border: 3px solid;
+    border-color: #9e9595;
+  }
+  
+  .qun-l-gi-hng-trng .text-wrapper-2 {
+    position: absolute;
+    top: 14px;
+    left: 42px;
+    font-family: "Noto Sans-Medium", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 25px;
+    letter-spacing: 0;
+    line-height: normal;
+    cursor: pointer;
+  }

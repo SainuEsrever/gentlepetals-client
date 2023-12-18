@@ -10,6 +10,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { FooterComponent } from './components/footer/footer.component';
 import { DashboardDashboardComponent } from './components/dashboard-dashboard/dashboard-dashboard.component';
 import { HomepageComponent } from './components/homepage/homepage.component';
+import { ShoppingCartComponent } from './components/shopping-cart/shopping-cart.component';
+import { ShoppingCartEmptyComponent } from './components/shopping-cart-empty/shopping-cart-empty.component';
+import { OrderComponent } from './components/order/order.component';
+import { PaymentComponent } from './components/payment/payment.component';
 
 
 @NgModule({
@@ -17,8 +21,12 @@ import { HomepageComponent } from './components/homepage/homepage.component';
     AppComponent,
     NavbarComponent,
     FooterComponent,
-    DashboardDashboardComponent
-    HomepageComponent
+    DashboardDashboardComponent,
+    HomepageComponent,
+    ShoppingCartComponent,
+    ShoppingCartEmptyComponent,
+    OrderComponent,
+    PaymentComponent
   ],
   imports: [
     BrowserModule,
