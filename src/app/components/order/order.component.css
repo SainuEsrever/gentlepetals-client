@@ -103,7 +103,7 @@
     line-height: normal;
   }
   
-  .t-hng .rectangle {
+  .t-hng .input-1 {
     width: 340px;
     height: 45px;
     top: 115px;
@@ -115,7 +115,7 @@
     border-color: #9e9595;
   }
   
-  .t-hng .rectangle-2 {
+  .t-hng .input-2 {
     width: 347px;
     height: 45px;
     top: 217px;
@@ -126,8 +126,18 @@
     border: 1px solid;
     border-color: #9e9595;
   }
-  
-  .t-hng .rectangle-3 {
+  .t-hng .input-3 {
+    width: 347px;
+    height: 45px;
+    top: 217px;
+    left: 404px;
+    position: absolute;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 1px solid;
+    border-color: #9e9595;
+  }
+  .t-hng .input-4 {
     width: 439px;
     height: 45px;
     top: 319px;
@@ -151,7 +161,7 @@
     line-height: normal;
   }
   
-  .t-hng .rectangle-4 {
+  .t-hng .input-5 {
     width: 227px;
     height: 45px;
     top: 421px;
@@ -163,7 +173,7 @@
     border-color: #9e9595;
   }
   
-  .t-hng .rectangle-5 {
+  .t-hng .input-6 {
     width: 227px;
     height: 45px;
     top: 421px;
@@ -187,7 +197,7 @@
     line-height: normal;
   }
   
-  .t-hng .rectangle-7 {
+  .t-hng .input-7 {
     width: 767px;
     height: 108px;
     top: 523px;
@@ -200,17 +210,6 @@
     resize: none;
   }
   
-  .t-hng .rectangle-8 {
-    width: 347px;
-    height: 45px;
-    top: 217px;
-    left: 404px;
-    position: absolute;
-    background-color: #ffffff;
-    border-radius: 10px;
-    border: 1px solid;
-    border-color: #9e9595;
-  }
   
   .t-hng .text-wrapper-9 {
     position: absolute;
@@ -242,14 +241,14 @@
     border-color: #9e9595;
   }
   
-  .t-hng .image {
+  /* .t-hng .image {
     position: absolute;
     width: 83px;
     height: 87px;
     top: 81px;
     left: 38px;
     object-fit: cover;
-  }
+  } */
   
   .t-hng .text-wrapper-10 {
     position: absolute;
@@ -344,4 +343,79 @@
     letter-spacing: 0;
     line-height: normal;
   }
-  
+  .product{
+    margin-left: 42px;
+    margin-top: 41px;
+  }
+  .product th{
+    font-family: "Noto Sans-Medium", Helvetica;
+    font-weight: 500;
+    color: #d87979;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  .product th:first-child{
+    text-align: left;
+  }
+  .product td:first-child{
+    width: 187px;
+  }
+  .product td:nth-child(2){
+    width: 110px;
+    text-align: center;
+  }
+  .product td:nth-child(3){
+    width: 110px;
+    text-align: center;
+  }
+  .product_info{
+    display: flex;
+  }
+  .image img{
+    width: 83px;
+  }
+  .info{
+    font-family: "Noto Sans-Medium", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 15px;
+    letter-spacing: 0;
+    line-height: normal;
+    padding-top: 42px;
+  }
+  .quantity{
+    font-family: "Noto Sans-Medium", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal
+  }
+  .price{
+    font-family: "Noto Sans-Medium", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  .btn{
+    width: 324px;
+    height: 49px;
+    border-radius: 10px;
+    background: var(--Color, #FFC0CB);
+    text-align: center;
+    padding-top: 8px;
+    margin-left:auto ;
+    margin-right: auto;
+    margin-top: 30px;
+  }
+  .btn a{
+    font-family: "Noto Sans-Bold", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 25px;
+    letter-spacing: 0;
+    line-height: normal;
+  }

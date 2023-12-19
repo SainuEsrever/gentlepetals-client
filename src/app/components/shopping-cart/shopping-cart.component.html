@@ -1,45 +1,49 @@
-<div class="qun-l-gi-hng">
-    <div class="div">
-      <div class="group">
-        <div class="overlap">
-          <div class="text-wrapper">Sản phẩm</div>
-          <div class="text-wrapper-2">Số lượng</div>
-          <div class="text-wrapper-3">Tổng cộng</div>
-          <div class="sn-phm">
-            <img class="image" src="assets/image/hoahong.png" />
-            <div class="text-wrapper-4">Hoa hồng</div>
-            <div class="i-SL">
-              <div class="overlap-group">
-                <div class="rectangle"></div>
-                <div class="rectangle-2"></div>
-                <div class="rectangle-3"></div>
-                <div class="text-wrapper-5"><button>-</button></div>
-                <div class="text-wrapper-6">1</div>
-                <div class="text-wrapper-7"><button>+</button></div>
-              </div>
+<div class="container">
+  <div class="product">
+    <table>
+      <tr>
+        <th>Sản phẩm</th>
+        <th>Số lượng</th>
+        <th>Tổng cộng</th>
+        <th></th>
+      </tr>
+      <tr>
+        <td>
+          <div class="product__info">
+            <div class="pImage">
+              <img src="assets/image/hoahong.png">
             </div>
-            <div class="text-wrapper-8">500.000 đ</div>
-            <div class="nt-xa">
-              <div class="div-wrapper"><a class="text-wrapper-9" routerLink="/empty-cart">Xóa</a></div>
+            <div class="pName">
+              <p>Hoa hồng</p>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="overlap-2">
-        <div class="tng-cng">
-          <div class="text-wrapper-10">540.000 đ</div>
-          <div class="text-wrapper-11">Tạm tính:</div>
-          <div class="text-wrapper-12">VAT:</div>
-          <div class="text-wrapper-13">Tổng cộng:</div>
-          <div class="text-wrapper-14">500.000 đ</div>
-          <div class="text-wrapper-15">40.000 đ</div>
-        </div>
-        <div class="overlap-wrapper">
-          <div class="overlap-3"><a class="text-wrapper-16" routerLink="/order">Đặt hàng</a></div>
-        </div>
-        <div class="overlap-group-wrapper">
-          <div class="overlap-4"><a class="text-wrapper-17">Tiếp tục mua hàng</a></div>
-        </div>
-      </div>
-    </div>
+        </td>
+        <td>
+          <button class="minus" >-</button>
+          <input type="number" [value]="1" class="quantity" min="0">
+          <button class="plus">+</button>
+        </td>
+        <td class="price">500.000 đ</td>
+        <td><div class="delete"><a routerLink="/empty-cart">Xóa</a></div></td>
+      </tr>
+    </table>
   </div>
+  <div class="bill">
+    <table>
+      <tr>
+        <td>Tạm tính:</td>
+        <td>500.000 đ</td>
+      </tr>
+      <tr>
+        <td>VAT:</td>
+        <td>40.000 đ</td>
+      </tr>
+      <tr>
+        <td>Tổng cộng</td>
+        <td>540.000 đ</td>
+      </tr>
+    </table>
+    <div class="btn1"><a routerLink="/order">Đặt hàng</a></div>
+    <div class="btn2"><a routerLink="">Tiếp tục mua hàng</a></div>
+  </div>
+</div>
