@@ -8,27 +8,47 @@
         <div class="text-wrapper-4">Điện thoại:</div>
         <div class="text-wrapper-5">Thông tin người nhận:</div>
         <div class="text-wrapper-6">Tên người nhận:</div>
-        <input type="text" class="rectangle" id="name">
-        <input type="text" class="rectangle-2" id="phone">
-        <input type="text" class="rectangle-3" id="address">
-        <input type="text" class="rectangle-4" id="city">
-        <input type="text" class="rectangle-5" id="state">
-        <div class="text-wrapper-8">Ghi chú lời nhắn:</div>
-        <textarea class="rectangle-7"></textarea>
-        <input type="text" class="rectangle-8">
         <div class="text-wrapper-9">Email:</div>
+        <div class="text-wrapper-8">Ghi chú lời nhắn:</div>
+        <input type="text" class="input-1" id="name">
+        <input type="text" class="input-2" id="phone">
+        <input type="email" class="input-3" id="email">
+        <input type="text" class="input-4" id="address">
+        <input type="text" class="input-5" id="city">
+        <input type="text" class="input-6" id="state">
+        <textarea class="input-7" id="note"></textarea>
         </div>
     </div>
     <div class="sn-phm">
         <div class="overlap">
-        <img class="image" src="assets/image/hoahong.png" />
-        <div class="text-wrapper-10">Sản phẩm</div>
-        <div class="text-wrapper-11">Số lượng</div>
-        <div class="text-wrapper-12">Tổng cộng</div>
-        <div class="text-wrapper-13">Hoa hồng</div>
-        <div class="text-wrapper-14">1</div>
-        <div class="text-wrapper-15">500.000 đ</div>
-        <div class="div-wrapper"><a class="text-wrapper-16" routerLink="/payment">Thanh toán</a></div>
+            <!-- <img class="image" src="assets/image/hoahong.png" />
+            <div class="text-wrapper-10">Sản phẩm</div>
+            <div class="text-wrapper-11">Số lượng</div>
+            <div class="text-wrapper-12">Tổng cộng</div>
+            <div class="text-wrapper-13">Hoa hồng</div>
+            <div class="text-wrapper-14">1</div>
+            <div class="text-wrapper-15">500.000 đ</div>
+            <div class="div-wrapper"><a class="text-wrapper-16" routerLink="/payment">Thanh toán</a></div> -->
+            <table class="product">
+                <tr>
+                    <th>Sản phẩm</th>
+                    <th>Số lượng</th>
+                    <th>Tổng cộng</th>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="product_info">
+                            <div class="image"><img src="assets/image/hoahong.png"></div>
+                            <div class="info">
+                                <p>Hoa hồng</p>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="quantity">1</td>
+                    <td class="price">500.000đ</td>
+                </tr>
+            </table>
+            <div class="btn"><a routerLink="/payment">Thanh toán</a></div>
         </div>
     </div>
     </div>
