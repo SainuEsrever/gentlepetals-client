@@ -1,239 +1,51 @@
-.t-hng {
-    background-color: #ffffff;
+  *{
+    padding: 0;
+    margin: 0;
+  }
+  .container{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
+    margin-bottom: 160px;
   }
-  
-  .t-hng .div {
-    background-color: #ffffff;
-    width: 1440px;
-    height: 1024px;
-    position: relative;
-  }
-  
-  .t-hng .thng-tin-ngi-nhn {
-    position: absolute;
-    width: 858px;
-    height: 657px;
-    top: 120px;
-    left: 45px;
-  }
-  
-  .t-hng .overlap-group {
-    width: 840px;
-    height: 657px;
-    position: relative;
-    background-color: #ffffff;
+  .info{
+    min-width: 792px;
+    margin-left: 45px;
     border-radius: 15px;
-    border: 1px solid;
-    border-color: #9e9595;
+    border: 1px solid #9E9595;
+    padding-left: 18px;
+    padding-top: 16px;
   }
-  
-  .t-hng .text-wrapper {
-    position: absolute;
-    top: 379px;
-    left: 281px;
-    font-family: "Noto Sans-Medium", Helvetica;
-    font-weight: 500;
-    color: #685e5e;
-    font-size: 20px;
-    letter-spacing: 0;
-    line-height: normal;
+  .info .title{
+    color: #695F5F;
+    font: 700 15px Noto Sans, sans-serif;
   }
-  
-  .t-hng .text-wrapper-2 {
-    position: absolute;
-    top: 277px;
-    left: 17px;
-    font-family: "Noto Sans-Medium", Helvetica;
-    font-weight: 500;
-    color: #685e5e;
-    font-size: 20px;
-    letter-spacing: 0;
-    line-height: normal;
-  }
-  
-  .t-hng .text-wrapper-3 {
-    position: absolute;
-    top: 379px;
-    left: 17px;
-    font-family: "Noto Sans-Medium", Helvetica;
-    font-weight: 500;
-    color: #685e5e;
-    font-size: 20px;
-    letter-spacing: 0;
-    line-height: normal;
-  }
-  
-  .t-hng .text-wrapper-4 {
-    position: absolute;
-    top: 175px;
-    left: 17px;
-    font-family: "Noto Sans-Medium", Helvetica;
-    font-weight: 500;
-    color: #685e5e;
-    font-size: 20px;
-    letter-spacing: 0;
-    line-height: normal;
-  }
-  
-  .t-hng .text-wrapper-5 {
-    position: absolute;
-    top: 31px;
-    left: 17px;
-    font-family: "Noto Sans-Bold", Helvetica;
-    font-weight: 700;
-    color: #685e5e;
-    font-size: 20px;
-    letter-spacing: 0;
-    line-height: normal;
-  }
-  
-  .t-hng .text-wrapper-6 {
-    position: absolute;
-    top: 73px;
-    left: 17px;
-    font-family: "Noto Sans-Medium", Helvetica;
-    font-weight: 500;
-    color: #685e5e;
-    font-size: 20px;
-    letter-spacing: 0;
-    line-height: normal;
-  }
-  
-  .t-hng .input-1 {
-    width: 340px;
-    height: 45px;
-    top: 115px;
-    left: 17px;
-    position: absolute;
-    background-color: #ffffff;
+  .info input{
+    width: 98%;
+    height: 24px;
     border-radius: 10px;
-    border: 1px solid;
-    border-color: #9e9595;
+    border: 1px solid #9E9595;
   }
-  
-  .t-hng .input-2 {
-    width: 347px;
-    height: 45px;
-    top: 217px;
-    left: 17px;
-    position: absolute;
-    background-color: #ffffff;
+  .info textarea{
+    width: 98%;
+    height: 124px;
     border-radius: 10px;
-    border: 1px solid;
-    border-color: #9e9595;
-  }
-  .t-hng .input-3 {
-    width: 347px;
-    height: 45px;
-    top: 217px;
-    left: 404px;
-    position: absolute;
-    background-color: #ffffff;
-    border-radius: 10px;
-    border: 1px solid;
-    border-color: #9e9595;
-  }
-  .t-hng .input-4 {
-    width: 439px;
-    height: 45px;
-    top: 319px;
-    left: 17px;
-    position: absolute;
-    background-color: #ffffff;
-    border-radius: 10px;
-    border: 1px solid;
-    border-color: #9e9595;
-  }
-  
-  .t-hng .text-wrapper-7 {
-    position: absolute;
-    top: 379px;
-    left: 553px;
-    font-family: "Noto Sans-Medium", Helvetica;
-    font-weight: 500;
-    color: #685e5e;
-    font-size: 20px;
-    letter-spacing: 0;
-    line-height: normal;
-  }
-  
-  .t-hng .input-5 {
-    width: 227px;
-    height: 45px;
-    top: 421px;
-    left: 17px;
-    position: absolute;
-    background-color: #ffffff;
-    border-radius: 10px;
-    border: 1px solid;
-    border-color: #9e9595;
-  }
-  
-  .t-hng .input-6 {
-    width: 227px;
-    height: 45px;
-    top: 421px;
-    left: 281px;
-    position: absolute;
-    background-color: #ffffff;
-    border-radius: 10px;
-    border: 1px solid;
-    border-color: #9e9595;
-  }
-  
-  .t-hng .text-wrapper-8 {
-    position: absolute;
-    top: 481px;
-    left: 17px;
-    font-family: "Noto Sans-Medium", Helvetica;
-    font-weight: 500;
-    color: #685e5e;
-    font-size: 20px;
-    letter-spacing: 0;
-    line-height: normal;
-  }
-  
-  .t-hng .input-7 {
-    width: 767px;
-    height: 108px;
-    top: 523px;
-    left: 17px;
-    position: absolute;
-    background-color: #ffffff;
-    border-radius: 10px;
-    border: 1px solid;
-    border-color: #9e9595;
+    border: 1px solid #9E9595;
+    margin-bottom: 21px;
     resize: none;
   }
-  
-  
-  .t-hng .text-wrapper-9 {
-    position: absolute;
-    top: 175px;
-    left: 404px;
-    font-family: "Noto Sans-Medium", Helvetica;
-    font-weight: 500;
-    color: #685e5e;
-    font-size: 20px;
-    letter-spacing: 0;
-    line-height: normal;
+  .info p{
+    margin-bottom: 8px;
+    margin-top: 8px;
+    color: #695f5f;
+    font: 500 15px Noto Sans, sans-serif;
   }
-  
-  .t-hng .sn-phm {
-    position: absolute;
-    width: 502px;
-    height: 282px;
-    top: 118px;
-    left: 913px;
+  .container .product_container {
+    min-width: 488px;
+    height: 257px;
+    margin-left: 49px;
   }
-  
-  .t-hng .overlap {
+  .container .overlap {
     width: 488px;
-    height: 282px;
+    height: 257px;
     position: relative;
     background-color: #ffffff;
     border-radius: 15px;
@@ -241,119 +53,13 @@
     border-color: #9e9595;
   }
   
-  /* .t-hng .image {
-    position: absolute;
-    width: 83px;
-    height: 87px;
-    top: 81px;
-    left: 38px;
-    object-fit: cover;
-  } */
-  
-  .t-hng .text-wrapper-10 {
-    position: absolute;
-    top: 40px;
-    left: 41px;
-    font-family: "Noto Sans-Medium", Helvetica;
-    font-weight: 500;
-    color: #d87979;
-    font-size: 20px;
-    letter-spacing: 0;
-    line-height: normal;
-  }
-  
-  .t-hng .text-wrapper-11 {
-    position: absolute;
-    top: 40px;
-    left: 228px;
-    font-family: "Noto Sans-Medium", Helvetica;
-    font-weight: 500;
-    color: #d87979;
-    font-size: 20px;
-    letter-spacing: 0;
-    line-height: normal;
-  }
-  
-  .t-hng .text-wrapper-12 {
-    position: absolute;
-    top: 40px;
-    left: 352px;
-    font-family: "Noto Sans-Medium", Helvetica;
-    font-weight: 500;
-    color: #d87979;
-    font-size: 20px;
-    letter-spacing: 0;
-    line-height: normal;
-  }
-  
-  .t-hng .text-wrapper-13 {
-    position: absolute;
-    top: 109px;
-    left: 135px;
-    font-family: "Noto Sans-Medium", Helvetica;
-    font-weight: 500;
-    color: #000000;
-    font-size: 15px;
-    letter-spacing: 0;
-    line-height: normal;
-  }
-  
-  .t-hng .text-wrapper-14 {
-    position: absolute;
-    top: 104px;
-    left: 265px;
-    font-family: "Noto Sans-Medium", Helvetica;
-    font-weight: 500;
-    color: #000000;
-    font-size: 20px;
-    letter-spacing: 0;
-    line-height: normal;
-  }
-  
-  .t-hng .text-wrapper-15 {
-    position: absolute;
-    top: 104px;
-    left: 356px;
-    font-family: "Noto Sans-Medium", Helvetica;
-    font-weight: 500;
-    color: #000000;
-    font-size: 20px;
-    letter-spacing: 0;
-    line-height: normal;
-  }
-  
-  .t-hng .div-wrapper {
-    position: absolute;
-    width: 324px;
-    height: 49px;
-    top: 199px;
-    left: 90px;
-    background-color: #ffc0cb;
-    border-radius: 10px;
-  }
-  
-  .t-hng .text-wrapper-16 {
-    position: absolute;
-    top: 8px;
-    left: 90px;
-    font-family: "Noto Sans-Bold", Helvetica;
-    font-weight: 700;
-    color: #ffffff;
-    font-size: 25px;
-    letter-spacing: 0;
-    line-height: normal;
-  }
   .product{
     margin-left: 42px;
-    margin-top: 41px;
+    margin-top: 16px;
   }
   .product th{
-    font-family: "Noto Sans-Medium", Helvetica;
-    font-weight: 500;
-    color: #d87979;
-    font-size: 20px;
-    letter-spacing: 0;
-    line-height: normal;
+    color: #d97979;
+    font: 500 15px Noto Sans, sans-serif;
   }
   .product th:first-child{
     text-align: left;
@@ -375,14 +81,10 @@
   .image img{
     width: 83px;
   }
-  .info{
-    font-family: "Noto Sans-Medium", Helvetica;
-    font-weight: 500;
+  .p_info{
+    font: 500 15px Noto Sans, sans-serif;
     color: #000000;
-    font-size: 15px;
-    letter-spacing: 0;
-    line-height: normal;
-    padding-top: 42px;
+    margin-top: 43px;
   }
   .quantity{
     font-family: "Noto Sans-Medium", Helvetica;
