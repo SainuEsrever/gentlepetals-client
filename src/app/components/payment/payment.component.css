@@ -1,0 +1,416 @@
+.thanh-ton {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .thanh-ton .div {
+    background-color: #ffffff;
+    width: 1440px;
+    height: 1024px;
+    position: relative;
+  }
+  
+  .thanh-ton .text-wrapper {
+    position: absolute;
+    top: 111px;
+    left: 554px;
+    font-family: "Noto Sans-Bold", Helvetica;
+    font-weight: 700;
+    color: #d87979;
+    font-size: 40px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .thanh-ton .thng-tin-ngi-nhn {
+    position: absolute;
+    width: 773px;
+    height: 210px;
+    top: 179px;
+    left: 68px;
+  }
+  
+  .thanh-ton .overlap-group {
+    position: relative;
+    width: 759px;
+    height: 210px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    border: 1px solid;
+    border-color: #9e9595;
+  }
+  
+  .thanh-ton .text-wrapper-2 {
+    position: absolute;
+    width: 303px;
+    top: 12px;
+    left: 42px;
+    font-family: "Noto Sans-Bold", Helvetica;
+    font-weight: 700;
+    color: #685e5e;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .thanh-ton .text-wrapper-3 {
+    position: absolute;
+    width: 136px;
+    top: 45px;
+    left: 42px;
+    font-family: "Noto Sans-Medium", Helvetica;
+    font-weight: 500;
+    color: #685e5e;
+    font-size: 15px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .thanh-ton .text-wrapper-4 {
+    position: absolute;
+    width: 144px;
+    top: 71px;
+    left: 42px;
+    font-family: "Noto Sans-Medium", Helvetica;
+    font-weight: 500;
+    color: #685e5e;
+    font-size: 15px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .thanh-ton .p {
+    position: absolute;
+    width: 381px;
+    top: 97px;
+    left: 42px;
+    font-family: "Noto Sans-Medium", Helvetica;
+    font-weight: 500;
+    color: #685e5e;
+    font-size: 15px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .thanh-ton .text-wrapper-5 {
+    position: absolute;
+    width: 229px;
+    top: 123px;
+    left: 42px;
+    font-family: "Noto Sans-Medium", Helvetica;
+    font-weight: 500;
+    color: #685e5e;
+    font-size: 15px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .thanh-ton .text-wrapper-6 {
+    position: absolute;
+    width: 116px;
+    top: 149px;
+    left: 42px;
+    font-family: "Noto Sans-Medium", Helvetica;
+    font-weight: 500;
+    color: #685e5e;
+    font-size: 15px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .thanh-ton .text-wrapper-7 {
+    position: absolute;
+    width: 240px;
+    top: 175px;
+    left: 42px;
+    font-family: "Noto Sans-Medium", Helvetica;
+    font-weight: 500;
+    color: #685e5e;
+    font-size: 15px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .thanh-ton .phng-thc-thanh-ton {
+    position: absolute;
+    width: 767px;
+    height: 164px;
+    top: 407px;
+    left: 68px;
+  }
+  
+  .thanh-ton .overlap {
+    position: relative;
+    width: 759px;
+    height: 164px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    border: 1px solid;
+    border-color: #9e9595;
+  } 
+  
+  .thanh-ton .text-wrapper-9 {
+    position: absolute;
+    width: 336px;
+    top: 15px;
+    left: 42px;
+    font-family: "Noto Sans-Bold", Helvetica;
+    font-weight: 700;
+    color: #685e5e;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .thanh-ton .union {
+    position: absolute;
+    height: 88px;
+    top: 57px;
+    left: 35px;
+  }
+
+  .thanh-ton .union label{
+    font-family: "Noto Sans-Medium", Helvetica;
+    font-weight: 500;
+    color: #685e5e;
+    font-size: 15px;
+    letter-spacing: 0;
+    line-height: normal;
+    padding-left: 5px;
+  }
+  
+  .thanh-ton .n-hng {
+    position: absolute;
+    width: 773px;
+    height: 205px;
+    top: 589px;
+    left: 68px;
+  }
+  
+  .thanh-ton .overlap-2 {
+    position: relative;
+    width: 759px;
+    height: 205px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    border: 1px solid;
+    border-color: #9e9595;
+  }
+  
+  .thanh-ton .text-wrapper-12 {
+    position: absolute;
+    width: 112px;
+    top: 13px;
+    left: 42px;
+    font-family: "Noto Sans-Bold", Helvetica;
+    font-weight: 700;
+    color: #685e5e;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .thanh-ton .image {
+    position: absolute;
+    width: 95px;
+    height: 87px;
+    top: 89px;
+    left: 42px;
+    object-fit: cover;
+  }
+  
+  .thanh-ton .text-wrapper-13 {
+    position: absolute;
+    width: 82px;
+    top: 58px;
+    left: 42px;
+    font-family: "Noto Sans-Medium", Helvetica;
+    font-weight: 500;
+    color: #d87979;
+    font-size: 15px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .thanh-ton .text-wrapper-14 {
+    position: absolute;
+    width: 74px;
+    top: 58px;
+    left: 343px;
+    font-family: "Noto Sans-Medium", Helvetica;
+    font-weight: 500;
+    color: #d87979;
+    font-size: 15px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .thanh-ton .text-wrapper-15 {
+    position: absolute;
+    width: 85px;
+    top: 58px;
+    left: 563px;
+    font-family: "Noto Sans-Medium", Helvetica;
+    font-weight: 500;
+    color: #d87979;
+    font-size: 15px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .thanh-ton .text-wrapper-16 {
+    position: absolute;
+    width: 81px;
+    top: 127px;
+    left: 156px;
+    font-family: "Noto Sans-Medium", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 15px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .thanh-ton .text-wrapper-17 {
+    position: absolute;
+    width: 10px;
+    top: 127px;
+    left: 368px;
+    font-family: "Noto Sans-Medium", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 15px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .thanh-ton .text-wrapper-18 {
+    width: 79px;
+    top: 127px;
+    left: 567px;
+    font-family: "Noto Sans-Medium", Helvetica;
+    font-weight: 500;
+    font-size: 15px;
+    position: absolute;
+    color: #000000;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .thanh-ton .overlap-3 {
+    position: absolute;
+    width: 467px;
+    height: 309px;
+    top: 179px;
+    left: 905px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    border: 1px solid;
+    border-color: #685e5e;
+  }
+  
+  .thanh-ton .tng-cng {
+    position: absolute;
+    width: 346px;
+    height: 157px;
+    top: 25px;
+    left: 72px;
+  }
+  
+  .thanh-ton .text-wrapper-19 {
+    top: 130px;
+    left: 239px;
+    font-family: "Noto Sans-Regular", Helvetica;
+    font-weight: 400;
+    font-size: 20px;
+    position: absolute;
+    color: #000000;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .thanh-ton .text-wrapper-20 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: "Noto Sans-Medium", Helvetica;
+    font-weight: 500;
+    color: #9e9595;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .thanh-ton .text-wrapper-21 {
+    position: absolute;
+    top: 65px;
+    left: 5px;
+    font-family: "Noto Sans-Medium", Helvetica;
+    font-weight: 500;
+    color: #9e9595;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .thanh-ton .text-wrapper-22 {
+    position: absolute;
+    top: 130px;
+    left: 5px;
+    font-family: "Noto Sans-Medium", Helvetica;
+    font-weight: 500;
+    color: #9e9595;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .thanh-ton .text-wrapper-23 {
+    top: 0;
+    left: 239px;
+    font-family: "Noto Sans-Regular", Helvetica;
+    font-weight: 400;
+    font-size: 20px;
+    position: absolute;
+    color: #000000;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .thanh-ton .text-wrapper-24 {
+    top: 65px;
+    left: 253px;
+    font-family: "Noto Sans-Regular", Helvetica;
+    font-weight: 400;
+    font-size: 20px;
+    position: absolute;
+    color: #000000;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .thanh-ton .div-wrapper {
+    position: absolute;
+    width: 324px;
+    height: 49px;
+    top: 228px;
+    left: 72px;
+    background-color: #ffc0cb;
+    border-radius: 10px;
+  }
+  
+  .thanh-ton .text-wrapper-25 {
+    position: absolute;
+    top: 7px;
+    left: 108px;
+    font-family: "Noto Sans-Bold", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 25px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
