@@ -17,7 +17,7 @@ import { HomepageComponent } from './components/homepage/homepage.component';
     AppComponent,
     NavbarComponent,
     FooterComponent,
-    DashboardDashboardComponent
+    DashboardDashboardComponent,
     HomepageComponent
   ],
   imports: [
