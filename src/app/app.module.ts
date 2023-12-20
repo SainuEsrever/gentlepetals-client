@@ -22,15 +22,11 @@ import { PaymentComponent } from './components/payment/payment.component';
     NavbarComponent,
     FooterComponent,
     DashboardDashboardComponent,
-<<<<<<< HEAD
-    HomepageComponent
-=======
     HomepageComponent,
     ShoppingCartComponent,
     ShoppingCartEmptyComponent,
     OrderComponent,
     PaymentComponent
->>>>>>> 462b34f5c1d6cdbf13f4020116dc67f475cf5bc7
   ],
   imports: [
     BrowserModule,
