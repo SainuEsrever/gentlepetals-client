@@ -1,14 +1,11 @@
-* {
-  margin: 0;
-  padding: 0;
-}
 .container {
   display: flex;
   margin-top: 30px;
   margin-bottom: min(60px);
 }
 .product_container{
-  width: 910px;
+  min-width: 910px;
+  width: 65%;
   padding-left: 60px;
 }
 .product {
@@ -141,7 +138,7 @@ input.quantity::-webkit-inner-spin-button {
 }
 
 .bill {
-  width: 420px;
+  min-width: 420px;
   height: 291px;
   border-radius: 15px;
   border: 1px solid #9E9595;
