@@ -7,13 +7,14 @@
   margin-top: 30px;
   margin-bottom: min(60px);
 }
-
-.product {
+.product_container{
   width: 910px;
-  height: 202px;
+  padding-left: 60px;
+}
+.product {
   border-radius: 15px;
   border: 1px solid #9E9595;
-  margin-left: 15px;
+  padding-bottom: 15px;
 }
 
 .product th {
@@ -46,16 +47,16 @@
 .product td:nth-child(4){
   width: 200px;
 }
-.product__info {
+.product_info {
   display: flex;
 }
 
 .pImage img {
-  width: 130px;
+  width: 63px;
 }
 
 .pName p {
-  margin-top: 66px;
+  margin-top: 30px;
   color: var(--Color-5, #000);
   font-family: "Noto Sans-Medium", Helvetica;
   font-size: 15px;
@@ -144,7 +145,7 @@ input.quantity::-webkit-inner-spin-button {
   height: 291px;
   border-radius: 15px;
   border: 1px solid #9E9595;
-  margin-left: 33px;
+  margin-left: 60px;
 }
 .bill table{
   width: 300px;
