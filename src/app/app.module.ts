@@ -14,6 +14,9 @@ import { ShoppingCartComponent } from './components/shopping-cart/shopping-cart.
 import { ShoppingCartEmptyComponent } from './components/shopping-cart-empty/shopping-cart-empty.component';
 import { OrderComponent } from './components/order/order.component';
 import { PaymentComponent } from './components/payment/payment.component';
+import { LoginComponent } from './components/login/login.component';
+import { RegisterComponent } from './components/register/register.component';
+import { ForgotPwComponent } from './components/forgot-pw/forgot-pw.component';
 
 
 @NgModule({
@@ -26,7 +29,10 @@ import { PaymentComponent } from './components/payment/payment.component';
     ShoppingCartComponent,
     ShoppingCartEmptyComponent,
     OrderComponent,
-    PaymentComponent
+    PaymentComponent,
+    LoginComponent,
+    RegisterComponent,
+    ForgotPwComponent,
   ],
   imports: [
     BrowserModule,
