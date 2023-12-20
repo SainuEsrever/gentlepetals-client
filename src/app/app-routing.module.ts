@@ -11,15 +11,6 @@ import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 import { ForgotPwComponent } from './components/forgot-pw/forgot-pw.component';
 
-const routes: Routes = [
-  
-  {path:"", redirectTo: "/login", pathMatch: "full"},
-  {path: "login", component: LoginComponent},
-  {path: "register", component: RegisterComponent},
-  {path: "forgotpw", component: ForgotPwComponent},
- 
-];
-
 
 const routes : Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -27,7 +18,10 @@ const routes : Routes = [
   { path : 'shopping-cart', component: ShoppingCartComponent},
   { path: 'empty-cart', component:ShoppingCartEmptyComponent},
   { path: 'order', component:OrderComponent},
-  { path: 'payment', component:PaymentComponent}
+  { path: 'payment', component:PaymentComponent},
+  {path: "login", component: LoginComponent},
+  {path: "register", component: RegisterComponent},
+  {path: "forgotpw", component: ForgotPwComponent},
 ]
 
 
