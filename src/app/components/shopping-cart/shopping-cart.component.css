@@ -51,9 +51,11 @@
 .pImage img {
   width: 63px;
 }
-
+.pName{
+  margin-top: auto;
+  margin-bottom: auto;
+}
 .pName p {
-  margin-top: 30px;
   color: var(--Color-5, #000);
   font-family: "Noto Sans-Medium", Helvetica;
   font-size: 15px;
@@ -78,7 +80,7 @@
 
 .quantity {
   width: 42px;
-  height: 35.4px;
+  height: 35px;
   text-align: center;
   border: 1px solid var(--Color-5, #000);
   font-family: "Noto Sans-Medium", Helvetica;
