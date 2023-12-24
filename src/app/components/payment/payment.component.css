@@ -1,0 +1,137 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.order{
+  color: #d97979;
+  margin-top: 25px;
+  font: 700 35px Noto Sans, sans-serif;
+  text-align: center;
+}
+.container{
+  display: flex;
+  margin-top: 26px;
+  margin-bottom: 100px;
+}
+.item-1{
+  min-width: 830px;
+  padding-left: 68px;
+}
+.item-1 .info{
+  min-width: 759px;
+  min-height: 158px;
+  border-radius: 15px;
+  border: 1px solid #9E9595;
+  padding-left: 43px;
+  padding-top: 13px;
+}
+.title{
+  color: #695f5f;
+  font: 700 20px Noto Sans, sans-serif;
+}
+.info p{
+  color: #695f5f;
+  margin-top: 10px;
+  font: 500 15px Noto Sans, sans-serif;
+}
+.item-1 .payment{
+  min-width: 759px;
+  min-height: 164px;
+  border-radius: 15px;
+  border: 1px solid #9E9595;
+  padding-left: 43px;
+  padding-top: 16px;
+  margin-top: 15px;
+}
+.payment p{
+  color: #695f5f;
+  margin-top: 10px;
+  font: 500 15px Noto Sans, sans-serif;
+  margin-top: 16px;
+}
+.payment label{
+  margin-left: 20px;
+}
+.item-1 .product{
+  min-width: 759px;
+  border-radius: 15px;
+  border: 1px solid #9E9595;
+  padding-left: 43px;
+  padding-top: 16px;
+  padding-bottom: 15px;
+  margin-top: 15px;
+}
+.product table th{
+  color: #d97979;
+  margin-top: 4px;
+  font: 500 15px Noto Sans, sans-serif;
+}
+.product table th:first-child{
+  text-align: left;
+}
+.product table td:first-child{
+  width: 293px;
+}
+.product table td:nth-child(2){
+  width: 80px;
+  text-align: center;
+}
+.product table td:nth-child(3){
+  width: 300px;
+  text-align: center;
+}
+.product_info{
+  display: flex;
+}
+.pImage img{
+  width: 61px;
+  height: 76px;
+}
+.pName{
+  margin-top: auto;
+  margin-bottom: auto;
+  color: var(--Color-5, #000);
+  font: 500 15px Noto Sans, sans-serif;
+}
+.quantity, .price{
+  color: var(--Color-5, #000);
+  font: 500 15px Noto Sans, sans-serif;
+}
+.bill{
+  width: 419px;
+  height: 244px;
+  border-radius: 15px;
+  border: 1px solid #695F5F;
+  padding-top: 10px;
+  padding-left: 41px;
+  padding-right: 41px;
+  margin-left: 110px;
+}
+.bill td{
+  padding-top: 17px;
+}
+.bill table td:first-child{
+  color: #9e9595;
+  font: 500 20px Noto Sans, sans-serif;
+  width: 165px;
+}
+.bill table td:nth-child(2){
+  color: var(--Color-5, #000);
+  font: 400 20px Noto Sans, sans-serif;
+  text-align: right;
+  width: 165px;
+}
+.btn{
+  min-width: 324px;
+  height: 49px;
+  text-align: center;
+  border-radius: 10px;
+  background: var(--Color, #FFC0CB);
+  padding-top: 8px;
+  margin-top: 30px;
+}
+.btn a{
+  color: var(--Color-2, #fff);
+  white-space: nowrap;
+  font: 700 25px Noto Sans, sans-serif;
+}

@@ -1,0 +1,124 @@
+  *{
+    padding: 0;
+    margin: 0;
+  }
+  .container{
+    display: flex;
+    margin-bottom: 160px;
+  }
+  .info{
+    min-width: 792px;
+    margin-left: 45px;
+    border-radius: 15px;
+    border: 1px solid #9E9595;
+    padding-left: 18px;
+    padding-top: 16px;
+  }
+  .info .title{
+    color: #695F5F;
+    font: 700 15px Noto Sans, sans-serif;
+  }
+  .info input{
+    width: 98%;
+    height: 24px;
+    border-radius: 10px;
+    border: 1px solid #9E9595;
+  }
+  .info textarea{
+    width: 98%;
+    height: 124px;
+    border-radius: 10px;
+    border: 1px solid #9E9595;
+    margin-bottom: 21px;
+    resize: none;
+  }
+  .info p{
+    margin-bottom: 8px;
+    margin-top: 8px;
+    color: #695f5f;
+    font: 500 15px Noto Sans, sans-serif;
+  }
+  .container .product_container {
+    min-width: 488px;
+    height: 257px;
+    margin-left: 49px;
+  }
+  .container .overlap {
+    width: 488px;
+    height: 257px;
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 15px;
+    border: 1px solid;
+    border-color: #9e9595;
+  }
+  
+  .product{
+    margin-left: 42px;
+    margin-top: 16px;
+  }
+  .product th{
+    color: #d97979;
+    font: 500 15px Noto Sans, sans-serif;
+  }
+  .product th:first-child{
+    text-align: left;
+  }
+  .product td:first-child{
+    width: 187px;
+  }
+  .product td:nth-child(2){
+    width: 110px;
+    text-align: center;
+  }
+  .product td:nth-child(3){
+    width: 110px;
+    text-align: center;
+  }
+  .product_info{
+    display: flex;
+  }
+  .pImage img{
+    width: 83px;
+  }
+  .pName{
+    font: 500 15px Noto Sans, sans-serif;
+    color: #000000;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .quantity{
+    font-family: "Noto Sans-Medium", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal
+  }
+  .price{
+    font-family: "Noto Sans-Medium", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  .btn{
+    width: 324px;
+    height: 49px;
+    border-radius: 10px;
+    background: var(--Color, #FFC0CB);
+    text-align: center;
+    padding-top: 8px;
+    margin-left:auto ;
+    margin-right: auto;
+    margin-top: 30px;
+  }
+  .btn a{
+    font-family: "Noto Sans-Bold", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 25px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
