@@ -1,0 +1,41 @@
+:root {
+    --main: rgba(255, 255, 255, 1);
+    --mu-phi-1: rgba(198, 117, 115, 1);
+    --mu-phi-2: rgba(229, 136, 136, 1);
+    --mu-phi-3: rgba(246, 150, 112, 1);
+    --cn-nhc: rgba(107, 87, 75, 1);
+    --header-font-family: "NotoSans-Bold", Helvetica;
+    --header-font-weight: 700;
+    --header-font-size: 12px;
+    --header-letter-spacing: 0px;
+    --header-line-height: normal;
+    --header-font-style: normal;
+    --product-font-family: "Montserrat-Regular", Helvetica;
+    --product-font-weight: 400;
+    --product-font-size: 12px;
+    --product-letter-spacing: 0px;
+    --product-line-height: normal;
+    --product-font-style: normal;
+    --noto-font-family: "NotoSans-Regular", Helvetica;
+    --noto-font-weight: 400;
+    --noto-font-size: 16px;
+    --noto-letter-spacing: 0px;
+    --noto-line-height: 20px;
+    --noto-font-style: normal;
+    --tensp-font-family: "Montserrat-Bold", Helvetica;
+    --tensp-font-weight: 700;
+    --tensp-font-size: 15px;
+    --tensp-letter-spacing: 0px;
+    --tensp-line-height: normal;
+    --tensp-font-style: normal;
+    --giasp-font-family: "Montserrat-Regular", Helvetica;
+    --giasp-font-weight: 400;
+    --giasp-font-size: 15px;
+    --giasp-letter-spacing: 0px;
+    --giasp-line-height: normal;
+    --giasp-font-style: normal;
+    --collection-1-color-2: rgba(255, 255, 255, 1);
+    --collection-1-color-4: rgba(229, 136, 136, 1);
+    --collection-1-color: rgba(255, 192, 203, 1);
+  }
+  
