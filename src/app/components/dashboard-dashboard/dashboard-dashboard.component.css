@@ -1,0 +1,4 @@
+/* Add this in your Tailwind CSS file or component styles */
+.active-tab {
+  @apply bg-[#FFC0CB] text-white;
+}
