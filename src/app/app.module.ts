@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms'; // <-- Import FormsModule
+import { FormsModule, ReactiveFormsModule } from '@angular/forms'; // <-- Import FormsModule
 import { HttpClientModule } from '@angular/common/http'; // <-- Import HttpModule
 
 
@@ -44,6 +44,7 @@ import { ForgotPwComponent } from './components/forgot-pw/forgot-pw.component';
     AppRoutingModule,
     FormsModule, // <-- Include module in our AppModules
     HttpClientModule, // <-- Include module in our AppModules,
+    ReactiveFormsModule, // <-- Include module in our AppModules
     
   ],
   providers: [],
