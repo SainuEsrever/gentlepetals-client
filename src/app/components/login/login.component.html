@@ -74,22 +74,44 @@
       </div>
     </footer>
 
-    <form>
+    <form #loginForm="ngForm" (ngSubmit)="onSubmit()">
       <div class="div-wrapper">
         <div class="overlap-4">
           <div class="LOGIN-TEXT">Đăng nhập</div>
+          <!-- EMAIL -->
           <div class="email-container">
-            <input class="overlap-group-5" placeholder="Email">
+            <input class="overlap-group-5" type="email"  formControlName="email" placeholder="Email"
+            [email]="true"  required 
+            [class.is-invalid]="form.controls['email'].invalid && form.controls['email'].touched" >
+            <!-- <small class="text-danger" *ngIf="form.controls['email'].invalid && form.controls['email'].touched" >Vui lòng nhập Email</small> -->
+            <div *ngIf="email.errors && (email.invalid || email.touched)">
+              <small class="text-danger" *ngIf="email.errors['required']">Bạn chưa nhập Email</small>
+              <small class="text-danger" *ngIf="email.errors['email']"> Email không hợp lệ</small>
+            </div>
           </div>
-  
+
+          <!-- PASSWORD -->
           <div class="PW-container">
-            <input class="overlap-group-5" placeholder="Mật khẩu">
+            <input class="overlap-group-5" type="password" formControlName="password" placeholder="Mật khẩu"
+            
+            [class.is-invalid]="form.controls['password'].invalid && form.controls['password'].touched">
+            <div>
+              <small class="text-danger" *ngIf="form.controls['password'].invalid && form.controls['password'].touched">Vui lòng nhập Mật khẩu</small>
+            </div>
+            
           </div>
   
           <div class="forgot-PW"><a routerLink="/forgotpw">Quên Mật khẩu?</a></div>
           
           <div class="LOGIN-BUTTON">
-            <div class="ng-nh-p-button-wrapper"><button type="submit" class="ng-nh-p-button">Đăng nhập</button></div>
+            <div class="ng-nh-p-button-wrapper">
+              <button type="submit" class="ng-nh-p-button" 
+              [disabled]="loginForm.form.invalid || email.value =='none' ||password.value == 'none' "
+              (click)="onSubmit()">
+                
+                Đăng nhập</button>
+
+              </div>
           </div>
           
           <div class="REGISTER">
@@ -98,5 +120,28 @@
         </div>
       </div>
     </form>
+    <!-- <form [formGroup]="form" (ngSubmit)="onSubmit()">
+      <div class="mb-3">
+          <label class="form-label">Username</label>
+          <input type="text" formControlName="email" class="form-control" [ngClass]="{ 'is-invalid': submitted && email.errors }" />
+          <div *ngIf="submitted && email.errors" class="invalid-feedback">
+              <div *ngIf="email.errors">Username is required</div>
+          </div>
+      </div>
+      <div class="mb-3">
+          <label class="form-label">Password</label>
+          <input type="password" formControlName="password" class="form-control" [ngClass]="{ 'is-invalid': submitted && password.errors }" />
+          <div *ngIf="submitted && password.errors" class="invalid-feedback">
+              <div *ngIf="password.errors">Password is required</div>
+          </div>
+      </div>
+      <div>
+          <button [disabled]="loading" class="btn btn-primary">
+              <span *ngIf="loading" class="spinner-border spinner-border-sm me-1"></span>
+              Login
+          </button>
+          <a routerLink="../register" class="btn btn-link">Register</a>
+      </div>
+  </form> -->
   </div>
 </div>

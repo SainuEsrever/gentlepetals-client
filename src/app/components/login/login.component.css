@@ -678,7 +678,10 @@
   font-weight: 700;
   color: #ffc0cb;
 }
-
+.LOGIN a{
+  color: #ffc0cb;
+  text-decoration: none;
+}
 .LOGIN .LOGIN-BUTTON {
   position: absolute;
   width: 252px;
