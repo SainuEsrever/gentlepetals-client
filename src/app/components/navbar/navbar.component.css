@@ -4,8 +4,12 @@
   height: 79px;
   /* background-image: url(./img/rectangle-1.png); */
   background-size: 100% 100%;
+  background-color: #ffc0cb;
 }
-
+a {
+  text-decoration: none;
+  color: white;
+}
 .navbar .overlap {
   position: absolute;
   width: 393px;

@@ -5,7 +5,10 @@
     justify-content: center;
     width: 100%;
   }
-  
+a{
+  text-decoration: none;
+  color: #ffc0cb;
+}
   .REGISTER .div {
     background-color: #ffffff;
     width: 1440px;

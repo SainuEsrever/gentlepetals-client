@@ -1,104 +1,27 @@
 <div class="LOGIN">
   <div class="div">
-    <div class="navbar">
-      <div class="overlap">
-        <div class="overlap-group">
-          <div class="group">
-            <img class="gentle-petals" src="" />
-            <div class="text-wrapper">GENTLE PETALS</div>
-          </div>
-          <div class="overlap-group-wrapper">
-            <div class="overlap-group-2">
-              <div class="rectangle"></div>
-              <div class="text-wrapper-2">Danh mục</div>
-              <img class="vector" src="" />
-            </div>
-          </div>
-        </div>
-        <div class="overlap-wrapper">
-          <div class="overlap-2">
-            <div class="text-wrapper-3">Store</div>
-            <div class="rectangle-2"></div>
-          </div>
-        </div>
-        <div class="group-2">
-          <div class="text-wrapper-4">Welcome Guest</div>
-          <div class="text-wrapper-5"><a routerLink="/login">Sign in</a> | <a routerLink="/register">Register</a></div>
-        </div>
-        <div class="group-3">
-          <div class="vector-wrapper"><img class="img" src="" /></div>
-        </div>
-        <div class="img-wrapper"><img class="vector-2" src="" /></div>
-      </div>
-    </div>
-
-    <footer class="footer">
-      <div class="overlap-3">
-        <img class="line" src="" />
-        <div class="group-4">
-          <div class="text-wrapper-6">Thông tin</div>
-          <div class="text-wrapper-7">Trang chủ</div>
-          <div class="text-wrapper-8">Về chúng tôi</div>
-          <div class="text-wrapper-9">Các loại sản phẩm</div>
-          <div class="ch-nh-s-ch">Blog</div>
-        </div>
-        <div class="group-5">
-          <div class="text-wrapper-10">Gental Petals</div>
-          <p class="p">669 QL 1A, Khu phố 3, Thủ Đức, Thành phố Hồ Chí Minh</p>
-        </div>
-        <div class="rectangle-3"></div>
-        <div class="text-wrapper-11">© Gental Petals 2023</div>
-        <img class="line-2" src="" />
-        <div class="group-6">
-          <div class="overlap-group-3">
-            <div class="text-wrapper-12">Thông tin</div>
-            <div class="text-wrapper-13">Trang chủ</div>
-          </div>
-          <div class="text-wrapper-14">Về chúng tôi</div>
-          <div class="text-wrapper-15">Các loại sản phẩm</div>
-          <div class="text-wrapper-16">Blog</div>
-        </div>
-        <div class="group-wrapper">
-          <div class="group-7">
-            <div class="overlap-group-4">
-              <div class="text-wrapper-17">Hỗ trợ</div>
-              <div class="text-wrapper-18">Liên hệ</div>
-            </div>
-            <div class="text-wrapper-19">Câu hỏi thường gặp</div>
-          </div>
-        </div>
-        <div class="group-8">
-          <div class="text-wrapper-20">Gental Petals</div>
-          <p class="text-wrapper-21">669 QL 1A, Khu phố 3, Thủ Đức, Thành phố Hồ Chí Minh</p>
-        </div>
-      </div>
-    </footer>
-
-    <form #loginForm="ngForm" (ngSubmit)="onSubmit()">
+    <form #loginForm="ngForm" >
       <div class="div-wrapper">
         <div class="overlap-4">
           <div class="LOGIN-TEXT">Đăng nhập</div>
-          <!-- EMAIL -->
           <div class="email-container">
+
             <input class="overlap-group-5" type="email"  formControlName="email" placeholder="Email"
-            [email]="true"  required 
-            [class.is-invalid]="form.controls['email'].invalid && form.controls['email'].touched" >
-            <!-- <small class="text-danger" *ngIf="form.controls['email'].invalid && form.controls['email'].touched" >Vui lòng nhập Email</small> -->
-            <div *ngIf="email.errors && (email.invalid || email.touched)">
-              <small class="text-danger" *ngIf="email.errors['required']">Bạn chưa nhập Email</small>
-              <small class="text-danger" *ngIf="email.errors['email']"> Email không hợp lệ</small>
+             
+            [class.is-invalid]="form.controls['email'].invalid && form.controls['email'].touched" >        
+            <div *ngIf="form.controls['email'].invalid && form.controls['email'].touched">
+              <small class="text-danger" *ngIf="form.controls['email'].errors?.['required']">Bạn chưa nhập Email</small>
+              <small class="text-danger" *ngIf="form.controls['email'].errors"> Email không hợp lệ</small>
             </div>
           </div>
 
-          <!-- PASSWORD -->
           <div class="PW-container">
-            <input class="overlap-group-5" type="password" formControlName="password" placeholder="Mật khẩu"
-            
+            <input class="overlap-group-5" type="password" formControlName="password" placeholder="Mật khẩu"            
             [class.is-invalid]="form.controls['password'].invalid && form.controls['password'].touched">
             <div>
               <small class="text-danger" *ngIf="form.controls['password'].invalid && form.controls['password'].touched">Vui lòng nhập Mật khẩu</small>
             </div>
-            
+
           </div>
   
           <div class="forgot-PW"><a routerLink="/forgotpw">Quên Mật khẩu?</a></div>
@@ -106,11 +29,9 @@
           <div class="LOGIN-BUTTON">
             <div class="ng-nh-p-button-wrapper">
               <button type="submit" class="ng-nh-p-button" 
-              [disabled]="loginForm.form.invalid || email.value =='none' ||password.value == 'none' "
-              (click)="onSubmit()">
-                
+              [disabled]="loginForm.form.invalid  "
+              >               
                 Đăng nhập</button>
-
               </div>
           </div>
           
@@ -120,28 +41,6 @@
         </div>
       </div>
     </form>
-    <!-- <form [formGroup]="form" (ngSubmit)="onSubmit()">
-      <div class="mb-3">
-          <label class="form-label">Username</label>
-          <input type="text" formControlName="email" class="form-control" [ngClass]="{ 'is-invalid': submitted && email.errors }" />
-          <div *ngIf="submitted && email.errors" class="invalid-feedback">
-              <div *ngIf="email.errors">Username is required</div>
-          </div>
-      </div>
-      <div class="mb-3">
-          <label class="form-label">Password</label>
-          <input type="password" formControlName="password" class="form-control" [ngClass]="{ 'is-invalid': submitted && password.errors }" />
-          <div *ngIf="submitted && password.errors" class="invalid-feedback">
-              <div *ngIf="password.errors">Password is required</div>
-          </div>
-      </div>
-      <div>
-          <button [disabled]="loading" class="btn btn-primary">
-              <span *ngIf="loading" class="spinner-border spinner-border-sm me-1"></span>
-              Login
-          </button>
-          <a routerLink="../register" class="btn btn-link">Register</a>
-      </div>
-  </form> -->
   </div>
 </div>
+
