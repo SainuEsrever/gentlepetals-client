@@ -78,13 +78,14 @@
   .product_info{
     display: flex;
   }
-  .image img{
+  .pImage img{
     width: 83px;
   }
-  .p_info{
+  .pName{
     font: 500 15px Noto Sans, sans-serif;
     color: #000000;
-    margin-top: 43px;
+    margin-top: auto;
+    margin-bottom: auto;
   }
   .quantity{
     font-family: "Noto Sans-Medium", Helvetica;
