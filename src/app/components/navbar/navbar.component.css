@@ -1,3 +1,8 @@
+html {
+  padding: 0;
+  margin: 0;
+}
+
 .navbar {
   position: sticky;
   background-color: rgba(255, 192, 203, 1);
