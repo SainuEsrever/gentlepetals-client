@@ -1,36 +1,49 @@
-<div class="navbar">
-  <div class="overlap">
-    <div class="group">
-      <img class="gentle-petals" src="img/gentle-petals-1.png" />
-      <div class="text-wrapper">GENTLE PETALS</div>
-    </div>
-    <div class="overlap-group-wrapper">
-      <div class="overlap-group">
-        <div class="rectangle"></div>
-        <div class="div">Danh mục</div>
-        <img class="vector" src="img/vector.svg" />
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Gental Petals</title>
+  <link rel="stylesheet" href="navbar.component.css" />
+</head>
+
+<body>
+  <div class="navbar">
+    <div class="overlap">
+      <div class="logoname">
+        <img class="logo" style="width:66; height: 66px" src="img/gentle-petals-1.svg" />
+        <p class="text1">GENTLE PETALS</p>
+      </div>
+      <div class="catagories">
+        <ul>
+          <li class="menu-item">
+            <div class="menu-link"><i class="bi bi-list" style="color:white; font-size:18px"></i>&nbsp;Danh mục</div>
+            <ul class="submenu">
+              <li><a href="trangdanhmuc.html" class="submenu-link">All products</a></li>
+              <li><a href="#" class="submenu-link">Hoa1</a></li>
+              <li><a href="#" class="submenu-link">Hoa2</a></li>
+              <li><a href="#" class="submenu-link">Hoa3</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="store"><a href="trangdanhmuc.html">Store</a></div>
+      <div class="search">
+        <i class="bi bi-search" style="color:#ffc0cb; font-size:18px; padding-right: 10px"></i>
+        <input type="text" placeholder="Tìm kiếm gì đó" id="find">
+      </div>
+      <div class="group-2">
+        <div class="text4">Welcome Guest</div>
+        <div class="text5">
+          <a href="#"> Sign in</a> |
+          <a href="#"> Register</a>
+        </div>
+      </div>
+      <div class="cart_cont">
+        <a href="#" class="cart"><i class="bi bi-cart-fill"></i></a>
       </div>
     </div>
   </div>
-  <div class="overlap-wrapper">
-    <div class="overlap-2">
-      <div class="text-wrapper-2">Store</div>
-      <div class="rectangle-2"></div>
-    </div>
-  </div>
-  <div class="group-2">
-    <div class="text-wrapper-3">Welcome Guest</div>
-    <div class="text-wrapper-4"><a routerLink="/login">Sign in</a> | <a routerLink="/register">Register</a></div>
-  </div>
-  <div class="group-3">
-    <div class="vector-wrapper"><img class="img" src="img/vector-2.svg" /></div>
-  </div>
-  <div class="overlap-3">
-    <div class="img-wrapper"><img class="vector-2" src="img/image.svg" /></div>
-    <div class="s-lng-sn-phm">
-      <div class="div-wrapper">
-        <div class="text-wrapper-5">1</div>
-      </div>
-    </div>
-  </div>
-</div>
+</body>
+
+</html>
