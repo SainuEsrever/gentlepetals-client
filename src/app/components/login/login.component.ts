@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { ActivatedRoute, Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-login',
@@ -8,26 +8,26 @@ import { ActivatedRoute, Router } from '@angular/router';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit{
-  form!: FormGroup;
-  loading = false;
+  loginForm! : FormGroup
   submitted = false;
-  
-  constructor(
-    private formBuilder: FormBuilder,
-    private route: ActivatedRoute,
-    private router: Router,
 
-) { }
-    // loginModel = new User("",'','','','')
-  ngOnInit(){
-    this.form = this.formBuilder.group({
-      email: ['', Validators.required],
-      password: ['', Validators.required]
-  });
+  constructor(private formBuilder: FormBuilder){
+
   }
-  
-  get email() 
-  { return this.form.controls['email']; }
-  get password() 
-  { return this.form.controls['password']; }
+  ngOnInit() {
+    this.loginForm = this.formBuilder.group({
+      email: ['', [Validators.required, Validators.email]],
+      password: ['', [Validators.required, Validators.minLength(8)]],
+      
+    })
+  }
+  get email(){return this.loginForm.controls['email']}
+  get password(){return this.loginForm.controls['password']}
+  onSubmit(){
+    this.submitted = true
+    if (this.loginForm.invalid){
+      return;
+    }
+    alert("Success")
+  }
 }

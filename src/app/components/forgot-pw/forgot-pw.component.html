@@ -5,13 +5,22 @@
         <div class="overlap-4">
           <div class="text-wrapper-23">Quên Mật khẩu</div>
           <div class="div-wrapper">
-            <div >
-                <input class="overlap-group-5" placeholder="Nhập địa chỉ Email" name="" id="">
-            </div>
+            <form [formGroup]="forgotpwForm" (ngSubmit)="onSubmit()" >   
+                <input class="overlap-group-5" placeholder="Nhập địa chỉ Email" type="email"
+                formControlName="email" [ngClass]="{'is-invalid':submitted && forgotpwForm.controls['email'].errors}" >
+                <div *ngIf="submitted && forgotpwForm.controls['email'].errors" class="text-danger" >
+                  <div *ngIf="submitted && forgotpwForm.controls['email'].errors?.['required']">
+                      Bạn chưa nhập Email!
+                  </div>
+                  <div *ngIf="submitted && forgotpwForm.controls['email'].errors?.['email']">
+                      Email sai !
+                  </div>
+                </div>  
+            </form>
           </div>
           <div class="text-wrapper-26"><a routerLink="/login">Đăng nhập?</a></div>
           <div class="group-9">
-            <div class="overlap-5"><button type="button" class="text-wrapper-25">Gửi Email xác thực</button></div>
+            <div class="overlap-5"><button type="button" class="text-wrapper-25" (click)="onSubmit()">Gửi Email xác thực</button></div>
           </div>
           
         </div>

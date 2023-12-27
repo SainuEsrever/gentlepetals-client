@@ -1,37 +1,42 @@
 <div class="LOGIN">
   <div class="div">
-    <form #loginForm="ngForm" >
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" >
       <div class="div-wrapper">
         <div class="overlap-4">
           <div class="LOGIN-TEXT">Đăng nhập</div>
           <div class="email-container">
 
             <input class="overlap-group-5" type="email"  formControlName="email" placeholder="Email"
-             
-            [class.is-invalid]="form.controls['email'].invalid && form.controls['email'].touched" >        
-            <div *ngIf="form.controls['email'].invalid && form.controls['email'].touched">
-              <small class="text-danger" *ngIf="form.controls['email'].errors?.['required']">Bạn chưa nhập Email</small>
-              <small class="text-danger" *ngIf="form.controls['email'].errors"> Email không hợp lệ</small>
+            formControlName="email" [ngClass]="{'is-invalid':submitted && loginForm.controls['email'].errors}">
+            <div *ngIf="submitted && loginForm.controls['email'].errors" class="text-danger" >
+              <div *ngIf="submitted && loginForm.controls['email'].errors['required']">
+                  Bạn chưa nhập Email!
+              </div>
+              <div *ngIf="submitted && loginForm.controls['email'].errors['email']">
+                  Email sai !
+              </div>
             </div>
+            
           </div>
 
           <div class="PW-container">
             <input class="overlap-group-5" type="password" formControlName="password" placeholder="Mật khẩu"            
-            [class.is-invalid]="form.controls['password'].invalid && form.controls['password'].touched">
-            <div>
-              <small class="text-danger" *ngIf="form.controls['password'].invalid && form.controls['password'].touched">Vui lòng nhập Mật khẩu</small>
+            [ngClass]="{'is-invalid':submitted && loginForm.controls['password'].errors}">
+            <div *ngIf="submitted && loginForm.controls['password'].errors" class="text-danger" >
+              <div *ngIf="submitted && loginForm.controls['password'].errors['required']">
+                Bạn chưa nhập Mật khẩu!
+              </div>
+              <div *ngIf="submitted && loginForm.controls['password'].errors['minLength(8)']">
+                Email ngắn !
+              </div>
             </div>
-
           </div>
   
           <div class="forgot-PW"><a routerLink="/forgotpw">Quên Mật khẩu?</a></div>
           
           <div class="LOGIN-BUTTON">
             <div class="ng-nh-p-button-wrapper">
-              <button type="submit" class="ng-nh-p-button" 
-              [disabled]="loginForm.form.invalid  "
-              >               
-                Đăng nhập</button>
+              <button type="submit" class="ng-nh-p-button" (click)="onSubmit()">Đăng nhập</button>
               </div>
           </div>
           

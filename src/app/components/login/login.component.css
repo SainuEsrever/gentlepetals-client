@@ -5,6 +5,12 @@
   justify-content: center;
   width: 100%;
 }
+.text-danger{
+  position: absolute;
+  top: 60px;
+  color: red;
+  font-size: 15px;
+}
 
 .LOGIN .div {
   background-color: #ffffff;
@@ -613,7 +619,7 @@
 
 .LOGIN .LOGIN-TEXT {
   position: absolute;
-  top: 43px;
+  top: 23px;
   left: 139px;
   font-family: "Montserrat-Bold", Helvetica;
   font-weight: 700;
@@ -629,8 +635,9 @@
   position: absolute;
   width: 377px;
   height: 55px;
-  top: 133px;
+  top: 100px;
   left: 39px;
+  
 }
 
 .LOGIN .overlap-group-5 {
@@ -715,8 +722,8 @@
 .LOGIN .forgot-PW {
   position: absolute;
   width: 199px;
-  top: 273px;
-  left: 237px;
+  top: 293px;
+  left: 257px;
   font-family: "Montserrat-Medium", Helvetica;
   font-weight: 500;
   color: #ffc0cb;
