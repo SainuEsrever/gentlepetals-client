@@ -1,8 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms'; // <-- Import FormsModule
+import { FormsModule, ReactiveFormsModule} from '@angular/forms'; // <-- Import FormsModule
 import { HttpClientModule } from '@angular/common/http'; // <-- Import HttpModule
-
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
@@ -44,7 +43,7 @@ import { ForgotPwComponent } from './components/forgot-pw/forgot-pw.component';
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    ReactiveFormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
