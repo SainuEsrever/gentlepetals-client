@@ -1,0 +1,101 @@
+
+<div class="REGISTER">
+    <div class="div">
+      
+
+      <div class="overlap-4">
+        <div class="text-wrapper-22">Tạo Tài Khoản</div>
+        <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+            <div class="form">
+
+              <div class="group-10">
+                  <label class="text-wrapper-23" for="firstname">Họ:</label>
+                  <input class="div-2" type="text"
+                  formControlName="firstName" [ngClass]="{'is-invalid':submitted && registerForm.controls['firstName'].errors}" >
+                  <div *ngIf="submitted && registerForm.controls['firstName'].errors" class="text-danger" >
+                    <div *ngIf="submitted && registerForm.controls['firstName'].errors['required']">
+                        Bạn chưa nhập Họ!
+                    </div>
+                    <div *ngIf="submitted && registerForm.controls['firstName'].errors['nameNoMatch']" >
+                      tên không được chứa ký tự đặc biệt
+                    </div>
+                  </div>
+              </div>
+              <div class="group-15">
+                <label class="text-wrapper-27">Tên:</label>
+                <input class="div-2" type="text"
+                formControlName="lastName" [ngClass]="{'is-invalid':submitted && registerForm.controls['lastName'].errors}">
+                <div *ngIf="submitted && registerForm.controls['lastName'].errors" class="text-danger" >
+                  <div *ngIf="submitted && registerForm.controls['lastName'].errors">
+                      Bạn chưa nhập Tên!
+                  </div>
+                </div>
+              </div>
+              <div class="group-14">
+                <div class="text-wrapper-26">Số điện thoại:</div>
+                <input class="div-2" type="text"
+                formControlName="phonenumber" [ngClass]="{'is-invalid':submitted && registerForm.controls['phonenumber'].errors}">
+                <div *ngIf="submitted && registerForm.controls['phonenumber'].errors" class="text-danger" >
+                  <div *ngIf="submitted && registerForm.controls['phonenumber'].errors['required']">
+                      Bạn chưa nhập Số điện thoại!
+                  </div>
+                  <div *ngIf="submitted && registerForm.controls['phonenumber'].errors['minLength']">
+                      Số điện thoại sai!
+                  </div>
+                </div>
+            </div>
+              <div class="group-11">
+                <div class="text-wrapper-23">Email:</div>
+                <input class="div-2" type="email" 
+                formControlName="email" [ngClass]="{'is-invalid':submitted && registerForm.controls['email'].errors}">
+                <div *ngIf="submitted && registerForm.controls['email'].errors" class="text-danger" >
+                  <div *ngIf="submitted && registerForm.controls['email'].errors?.['required']">
+                      Bạn chưa nhập Email!
+                  </div>
+                  <div *ngIf="submitted && registerForm.controls['email'].errors?.['email']">
+                      Email sai !
+                  </div>
+                </div>  
+              </div>
+              <div class="group-12">
+                  <div class="text-wrapper-24">Tạo mật khẩu:</div>
+                  <input class="div-2"  type="password" 
+                  formControlName="password" [ngClass]="{'is-invalid':submitted && registerForm.controls['password'].errors}">
+                  <div *ngIf="submitted && registerForm.controls['password'].errors"  class="text-danger" >
+                    <div *ngIf="submitted && registerForm.controls['password'].errors['required']">
+                        Bạn chưa nhập Mật khẩu!
+                    </div>
+                    <div *ngIf="submitted && registerForm.controls['password'].errors['minLength']">
+                        Mật khẩu ngắn!
+                    </div>
+                  </div>
+              </div>
+              <div class="group-13">
+                  <div class="text-wrapper-25">Nhập lại mật khẩu:</div>
+                  <input class="div-2" type="password" 
+                  formControlName="confirmPass" [class.is-invalid]="registerForm.errors?.['misMatch']">
+                  <!-- <div *ngIf="submitted && registerForm.controls['confirmPassword'].errors" class="text-danger" > -->
+                    <!-- <div *ngIf="submitted && registerForm.controls['confirmPassword'].errors['required']">
+                        Bạn chưa nhập lại Mật khẩu!
+                    </div> -->
+                    <small *ngIf=" registerForm.errors?.['misMatch']" class="text-danger">
+                      Mật khẩu không trùng khớp!
+                    </small>
+                  <!-- </div> -->
+              </div>
+            
+            
+            </div>
+        </form>
+
+        <div class="group-9">
+            <div class="ng-k-bt-wrapper"><button type="button" class="ng-k-bt" (click)="onSubmit()">Đăng ký</button></div>
+        </div>
+
+        <div class="c-t-i-kho-n-ng-nh-p">
+          <span class="span">Đã có Tài khoản? </span> <span class="text-wrapper-28"><a routerLink="/login">Đăng nhập?</a></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  

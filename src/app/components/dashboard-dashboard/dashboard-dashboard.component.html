@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div class="flex items-center w-screen h-screen max-w-screen-xl bg-white border border-solid shadow-sm">
     <div class="flex items-center ml-[155px]">
         <div class="flex flex-col items-stretch">
@@ -30,4 +31,47 @@
             </div>
         </div>
     </div>
+=======
+<div class="flex min-h-auto bg-white ml-9 mt-20 mb-40 mr-9">
+
+    <!-- Navigation Sidebar -->
+    <nav class="flex flex-col text-[#FF6A85] h-fit bg-white border w-52 rounded-[10px]">
+
+        <a [routerLink]="'/dashboard'" routerLinkActive="active-tab"
+            class="nav-item py-4 px-3.5 text-lg font-light border-b border-solid hover:bg-gray-100">Dashboard</a>
+
+        <a [routerLink]="'/edit-profile'" routerLinkActive="active-tab"
+            class="nav-item py-4 px-3.5 text-lg font-light border-b border-solid hover:bg-gray-100">Thay đổi thông
+            tin</a>
+
+        <a [routerLink]="'/change-password'" routerLinkActive="active-tab"
+            class="nav-item py-4 px-3.5 text-lg font-light border-b border-solid hover:bg-gray-100">Đổi mật khẩu</a>
+
+        <div class="py-3.5 text-center">
+            <button type="button"
+                class="px-4 py-2 hover:bg-gray-100 text-[#FF6A85] border rounded-full font-bold focus:outline-none focus:shadow-outline-pink"
+                aria-label="Đăng xuất">Đăng xuất</button>
+        </div>
+
+        <!-- <div *ngIf="" class="py-3.5 text-center font-bold text-base">
+            <button class="btn btn-primary text-pink-500 aria-label='Đăng xuất'" *(click)="logout()">Đăng xuất </button>
+        </div> -->
+    </nav>
+
+    <!-- Main Content -->
+    <section class="flex flex-col flex-grow p-4 ml-10 w-6/12 h-80 border rounded-[10px]">
+        <h2 class="w-full mb-4 text-xl font-bold text-gray-900">Tài khoản đăng nhập:</h2>
+        <div class="flex h-full justify-evenly">
+            <div class="flex flex-col items-center justify-center w-full h-full border border-collapse">
+                <p class="font-bold text-gray-700">Total Orders</p>
+                <!-- <h3 class="text-lg font-bold text-gray-900">{{ totalOrders }}</h3> -->
+                <a href="#" class="text-blue-500">View Order</a>
+            </div>
+            <div class="flex flex-col items-center justify-center w-full h-full border border-collapse">
+                <div class="w-24 h-24 mb-3 bg-gray-400 rounded-full"></div>
+                <!-- <p class="text-center text-gray-700">{{ userEmail }}</p> -->
+            </div>
+        </div>
+    </section>
+>>>>>>> d761ffbe5cf52aea9cb997ed7fa5f76368474c57
 </div>
