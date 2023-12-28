@@ -1,113 +1,95 @@
 
 <div class="REGISTER">
     <div class="div">
-      <div class="navbar">
-        <div class="overlap">
-          <div class="overlap-group">
-            <div class="group">
-              <img class="gentle-petals" src="" />
-              <div class="text-wrapper">GENTLE PETALS</div>
-            </div>
-            <div class="overlap-group-wrapper">
-              <div class="overlap-group-2">
-                <div class="rectangle"></div>
-                <div class="text-wrapper-2">Danh mục</div>
-                <img class="vector" src="" />
-              </div>
-            </div>
-          </div>
-          <div class="overlap-wrapper">
-            <div class="overlap-2">
-              <div class="text-wrapper-3">Store</div>
-              <div class="rectangle-2"></div>
-            </div>
-          </div>
-          <div class="group-2">
-            <div class="text-wrapper-4">Welcome Guest</div>
-            <div class="text-wrapper-5"><a routerLink="/login">Sign in </a> | <a routerLink="/register">Register</a></div>
-          </div>
-          <div class="group-3">
-            <div class="vector-wrapper"><img class="img" src="" /></div>
-          </div>
-          <div class="img-wrapper"><img class="vector-2" src="" /></div>
-        </div>
-      </div>
-
-      <footer class="footer">
-        <div class="overlap-3">
-          <img class="line" src="" />
-          <div class="group-4">
-            <div class="text-wrapper-6">Thông tin</div>
-            <div class="text-wrapper-7">Trang chủ</div>
-            <div class="text-wrapper-8">Về chúng tôi</div>
-            <div class="text-wrapper-9">Các loại sản phẩm</div>
-            <div class="ch-nh-s-ch">Blog</div>
-          </div>
-          <div class="group-5">
-            <div class="text-wrapper-10">Gental Petals</div>
-            <p class="p">669 QL 1A, Khu phố 3, Thủ Đức, Thành phố Hồ Chí Minh</p>
-          </div>
-          <div class="rectangle-3"></div>
-          <div class="text-wrapper-11">© Gental Petals 2023</div>
-          <img class="line-2" src="" />
-          <div class="group-6">
-            <div class="overlap-group-3">
-              <div class="text-wrapper-12">Thông tin</div>
-              <div class="text-wrapper-13">Trang chủ</div>
-            </div>
-            <div class="text-wrapper-14">Về chúng tôi</div>
-            <div class="text-wrapper-15">Các loại sản phẩm</div>
-            <div class="text-wrapper-16">Blog</div>
-          </div>
-          <div class="group-wrapper">
-            <div class="group-7">
-              <div class="overlap-group-4">
-                <div class="text-wrapper-17">Hỗ trợ</div>
-                <div class="text-wrapper-18">Liên hệ</div>
-              </div>
-              <div class="text-wrapper-19">Câu hỏi thường gặp</div>
-            </div>
-          </div>
-          <div class="group-8">
-            <div class="text-wrapper-20">Gental Petals</div>
-            <p class="text-wrapper-21">669 QL 1A, Khu phố 3, Thủ Đức, Thành phố Hồ Chí Minh</p>
-          </div>
-        </div>
-      </footer>
+      
 
       <div class="overlap-4">
         <div class="text-wrapper-22">Tạo Tài Khoản</div>
-        <form>
+        <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
             <div class="form">
-            <div class="group-10">
-                <input class="div-2" name="" id="">
-                <div class="text-wrapper-23">Họ:</div>
-            </div>
-            <div class="group-11">
-                <input class="div-2" name="" id="">
-                <div class="text-wrapper-23">Email:</div>
-            </div>
-            <div class="group-12">
-                <input class="div-2" name="" id="">
-                <div class="text-wrapper-24">Tạo mật khẩu:</div>
-            </div>
-            <div class="group-13">
-                <input class="div-2" name="" id="">
-                <div class="text-wrapper-25">Nhập lại mật khẩu:</div>
-            </div>
-            <div class="group-14">
-                <input class="div-2" name="" id="">
+
+              <div class="group-10">
+                  <label class="text-wrapper-23" for="firstname">Họ:</label>
+                  <input class="div-2" type="text"
+                  formControlName="firstName" [ngClass]="{'is-invalid':submitted && registerForm.controls['firstName'].errors}" >
+                  <div *ngIf="submitted && registerForm.controls['firstName'].errors" class="text-danger" >
+                    <div *ngIf="submitted && registerForm.controls['firstName'].errors['required']">
+                        Bạn chưa nhập Họ!
+                    </div>
+                    <div *ngIf="submitted && registerForm.controls['firstName'].errors['nameNoMatch']" >
+                      tên không được chứa ký tự đặc biệt
+                    </div>
+                  </div>
+              </div>
+              <div class="group-15">
+                <label class="text-wrapper-27">Tên:</label>
+                <input class="div-2" type="text"
+                formControlName="lastName" [ngClass]="{'is-invalid':submitted && registerForm.controls['lastName'].errors}">
+                <div *ngIf="submitted && registerForm.controls['lastName'].errors" class="text-danger" >
+                  <div *ngIf="submitted && registerForm.controls['lastName'].errors">
+                      Bạn chưa nhập Tên!
+                  </div>
+                </div>
+              </div>
+              <div class="group-14">
                 <div class="text-wrapper-26">Số điện thoại:</div>
+                <input class="div-2" type="text"
+                formControlName="phonenumber" [ngClass]="{'is-invalid':submitted && registerForm.controls['phonenumber'].errors}">
+                <div *ngIf="submitted && registerForm.controls['phonenumber'].errors" class="text-danger" >
+                  <div *ngIf="submitted && registerForm.controls['phonenumber'].errors['required']">
+                      Bạn chưa nhập Số điện thoại!
+                  </div>
+                  <div *ngIf="submitted && registerForm.controls['phonenumber'].errors['minLength']">
+                      Số điện thoại sai!
+                  </div>
+                </div>
             </div>
-            <div class="group-15">
-                <input class="div-2" name="" id="">
-                <div class="text-wrapper-27">Tên:</div>
-            </div>
+              <div class="group-11">
+                <div class="text-wrapper-23">Email:</div>
+                <input class="div-2" type="email" 
+                formControlName="email" [ngClass]="{'is-invalid':submitted && registerForm.controls['email'].errors}">
+                <div *ngIf="submitted && registerForm.controls['email'].errors" class="text-danger" >
+                  <div *ngIf="submitted && registerForm.controls['email'].errors?.['required']">
+                      Bạn chưa nhập Email!
+                  </div>
+                  <div *ngIf="submitted && registerForm.controls['email'].errors?.['email']">
+                      Email sai !
+                  </div>
+                </div>  
+              </div>
+              <div class="group-12">
+                  <div class="text-wrapper-24">Tạo mật khẩu:</div>
+                  <input class="div-2"  type="password" 
+                  formControlName="password" [ngClass]="{'is-invalid':submitted && registerForm.controls['password'].errors}">
+                  <div *ngIf="submitted && registerForm.controls['password'].errors"  class="text-danger" >
+                    <div *ngIf="submitted && registerForm.controls['password'].errors['required']">
+                        Bạn chưa nhập Mật khẩu!
+                    </div>
+                    <div *ngIf="submitted && registerForm.controls['password'].errors['minLength']">
+                        Mật khẩu ngắn!
+                    </div>
+                  </div>
+              </div>
+              <div class="group-13">
+                  <div class="text-wrapper-25">Nhập lại mật khẩu:</div>
+                  <input class="div-2" type="password" 
+                  formControlName="confirmPass" [class.is-invalid]="registerForm.errors?.['misMatch']">
+                  <!-- <div *ngIf="submitted && registerForm.controls['confirmPassword'].errors" class="text-danger" > -->
+                    <!-- <div *ngIf="submitted && registerForm.controls['confirmPassword'].errors['required']">
+                        Bạn chưa nhập lại Mật khẩu!
+                    </div> -->
+                    <small *ngIf=" registerForm.errors?.['misMatch']" class="text-danger">
+                      Mật khẩu không trùng khớp!
+                    </small>
+                  <!-- </div> -->
+              </div>
+            
+            
             </div>
         </form>
 
         <div class="group-9">
-            <div class="ng-k-bt-wrapper"><button type="button" class="ng-k-bt">Đăng ký</button></div>
+            <div class="ng-k-bt-wrapper"><button type="button" class="ng-k-bt" (click)="onSubmit()">Đăng ký</button></div>
         </div>
 
         <div class="c-t-i-kho-n-ng-nh-p">
@@ -116,3 +98,4 @@
       </div>
     </div>
   </div>
+  

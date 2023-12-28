@@ -5,7 +5,11 @@
     justify-content: center;
     width: 100%;
   }
-  
+a{
+  text-decoration: none;
+  color: #ffc0cb;
+}
+
   .REGISTER .div {
     background-color: #ffffff;
     width: 1440px;
@@ -665,6 +669,12 @@
     height: 78px;
     top: 0;
     left: 0;
+  }
+  .text-danger{
+    position: absolute;
+    top: 80px;
+    color: red;
+    font-size: 15px;
   }
   
 .REGISTER .div-2 {

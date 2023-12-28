@@ -5,7 +5,16 @@
     justify-content: center;
     width: 100%;
   }
-  
+  a{
+    text-decoration: none;
+    color: #ffc0cb;
+  }
+  .text-danger{
+    position: absolute;
+    color: red;
+    font-size: 15px;
+    top: 50px
+  }
   .FORGOT-PW .div {
     background-color: #ffffff;
     width: 1440px;
@@ -647,6 +656,7 @@
     left: 43px;
   }
   
+  
   .FORGOT-PW .overlap-group-5 {
     position: relative;
     width: 618px;
@@ -655,11 +665,7 @@
     border-radius: 10px;
     border: 1px solid;
     border-color: #afafaf;
-    /* position: absolute; */
-    /* width: 321px; */
-    top: 15px;
     padding-left: 10px;
-    /* left: 23px; */
     font-family: "Montserrat-ExtraLight", Helvetica;
     font-weight: 200;
     color: black;
@@ -673,7 +679,23 @@
     outline: 2px solid #ffc0cb; 
     
   } 
-
+.overlap-group-5-danger{
+  position: relative;
+    width: 618px;
+    height: 50px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 1px solid;
+    border-color: #bc0e0e;
+    padding-left: 10px;
+    font-family: "Montserrat-ExtraLight", Helvetica;
+    font-weight: 200;
+    color: black;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: 20px;
+    white-space: nowrap;
+}
   
   .FORGOT-PW .group-9 {
     position: absolute;
