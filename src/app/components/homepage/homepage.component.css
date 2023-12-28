@@ -1,0 +1,119 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+body,
+html {
+  padding: 0;
+  margin: 0;
+}
+
+.page2, .main, .page3{
+  width: 1050px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.banner {
+  position: relative;
+  width: 930px;
+  height: 330px;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.banner img {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+
+.divell {
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: -40px;
+  position: absolute;
+  width: 54px;
+  height: 12px;
+}
+
+.ellipse1:focus,
+.ellipse2:focus,
+.ellipse3:focus {
+  width: 12px;
+  height: 12px;
+  background-color: #ffc0cb;
+  border-radius: 50px;
+}
+
+.ellipse1,
+.ellipse2,
+.ellipse3 {
+  width: 12px;
+  height: 12px;
+  background-color: #a7a7a7;
+  border-radius: 50px;
+}
+
+.group-3 {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+
+.seeall {
+  cursor: pointer;
+  height: 37px;
+  width: 70px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 2px solid #E58888;
+  display: block;
+  color: #E58888;
+  padding: 5px;
+  text-align: center;
+}
+
+#content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.product {
+  width: 240px;
+  height: 280px;
+  border-radius: 10px;
+  border: 1px solid #B4B4B4;
+  margin-bottom: 30px;
+  cursor: pointer;
+
+}
+
+.product img {
+  margin: 10px auto 5px auto;
+}
+
+.product .name {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 10px 0 0 20px;
+}
+
+.product .price {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  padding-left: 20px;
+  color: red;
+}
+
+.product hr {
+  margin: 10px 0 0 0;
+}
