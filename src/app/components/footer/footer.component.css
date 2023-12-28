@@ -1,212 +1,52 @@
-/* .footer {
-    width: 1452px;
-    height: 349px;
-  }
-  
-  .footer .footer-variant {
-    height: 349px;
-  }
-  
-  .footer .div {
-    position: relative;
-    width: 1452px;
-    height: 349px;
-    background-color: #f2f2f2;
-    border-top-width: 1px;
-    border-top-style: solid;
-    border-color: #bbbbbb;
-    box-shadow: 0px 4px 4px #00000040;
-  }
-  
-  .footer .group {
-    position: absolute;
-    width: 337px;
-    height: 114px;
-    top: 32px;
-    left: 45px;
-  }
-  
-  .footer .text-wrapper {
-    position: absolute;
-    width: 220px;
-    height: 52px;
-    top: 0;
-    left: 0;
-    font-family: "Montserrat-Bold", Helvetica;
-    font-weight: 700;
-    color: #000000;
-    font-size: 24px;
-    letter-spacing: 0;
-    line-height: 20px;
-  }
-  
-  .footer .p {
-    position: absolute;
-    width: 333px;
-    height: 62px;
-    top: 52px;
-    left: 0;
-    font-family: "Montserrat-Regular", Helvetica;
-    font-weight: 400;
-    color: #000000;
-    font-size: 20px;
-    letter-spacing: 0;
-    line-height: 20px;
-  }
-  
-  .footer .group-2 {
-    position: absolute;
-    width: 255px;
-    height: 190px;
-    top: 32px;
-    left: 773px;
-  }
-  
-  .footer .text-wrapper-2 {
-    position: absolute;
-    width: 158px;
-    height: 52px;
-    top: 0;
-    left: 0;
-    font-family: "Montserrat-Bold", Helvetica;
-    font-weight: 700;
-    color: #000000;
-    font-size: 20px;
-    letter-spacing: 0;
-    line-height: 20px;
-  }
-  
-  .footer .text-wrapper-3 {
-    position: absolute;
-    width: 240px;
-    height: 29px;
-    top: 62px;
-    left: 0;
-    font-family: "Montserrat-Regular", Helvetica;
-    font-weight: 400;
-    color: #000000;
-    font-size: 20px;
-    letter-spacing: 0;
-    line-height: 20px;
-  }
-  
-  .footer .text-wrapper-4 {
-    position: absolute;
-    width: 245px;
-    height: 33px;
-    top: 91px;
-    left: 0;
-    font-family: "Montserrat-Regular", Helvetica;
-    font-weight: 400;
-    color: #000000;
-    font-size: 20px;
-    letter-spacing: 0;
-    line-height: 20px;
-  }
-  
-  .footer .text-wrapper-5 {
-    position: absolute;
-    width: 245px;
-    height: 33px;
-    top: 124px;
-    left: 0;
-    font-family: "Montserrat-Regular", Helvetica;
-    font-weight: 400;
-    color: #000000;
-    font-size: 20px;
-    letter-spacing: 0;
-    line-height: 20px;
-  }
-  
-  .footer .text-wrapper-6 {
-    position: absolute;
-    width: 245px;
-    height: 33px;
-    top: 157px;
-    left: 0;
-    font-family: "Montserrat-Regular", Helvetica;
-    font-weight: 400;
-    color: #000000;
-    font-size: 20px;
-    letter-spacing: 0;
-    line-height: 20px;
-  }
-  
-  .footer .group-wrapper {
-    position: absolute;
-    width: 342px;
-    height: 124px;
-    top: 32px;
-    left: 1091px;
-  }
-  
-  .footer .group-3 {
-    position: relative;
-    width: 348px;
-    height: 124px;
-  }
-  
-  .footer .text-wrapper-7 {
-    position: absolute;
-    width: 220px;
-    height: 52px;
-    top: 0;
-    left: 0;
-    font-family: "Montserrat-Bold", Helvetica;
-    font-weight: 700;
-    color: #000000;
-    font-size: 20px;
-    letter-spacing: 0;
-    line-height: 20px;
-  }
-  
-  .footer .text-wrapper-8 {
-    position: absolute;
-    width: 335px;
-    height: 29px;
-    top: 62px;
-    left: 0;
-    font-family: "Montserrat-Regular", Helvetica;
-    font-weight: 400;
-    color: #000000;
-    font-size: 20px;
-    letter-spacing: 0;
-    line-height: 20px;
-  }
-  
-  .footer .text-wrapper-9 {
-    position: absolute;
-    width: 342px;
-    height: 33px;
-    top: 91px;
-    left: 0;
-    font-family: "Montserrat-Regular", Helvetica;
-    font-weight: 400;
-    color: #000000;
-    font-size: 20px;
-    letter-spacing: 0;
-    line-height: 20px;
-  }
-  
-  .footer .text-wrapper-10 {
-    position: absolute;
-    top: 277px;
-    left: 638px;
-    font-family: "Inter-Regular", Helvetica;
-    font-weight: 400;
-    color: #a6a6a6;
-    font-size: 20px;
-    letter-spacing: 0;
-    line-height: normal;
-    white-space: nowrap;
-  }
-  
-  .footer .line {
-    position: absolute;
-    width: 1296px;
-    height: 1px;
-    top: 256px;
-    left: 73px;
-    object-fit: cover;
-  }
-   */
+html,body {
+  padding: 0;
+  margin: 0;
+  position:relative; 
+  min-height: 100%;
+}
+.footer{
+  font-family: "Noto-sans", sans-serif;
+  background-color: #f2f2f2;
+  border-top: 1px solid #bbbbbb;
+  width: 100%;
+  position: absolute;
+  margin-bottom: auto;
+  margin-top: auto;
+}
+
+.box1{
+  max-width: 1050px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.box3{
+  padding-top: 20px;
+  display: flex;
+}
+.footer .group {
+  width: 280px;
+  height: 114px;
+  margin-top: 50px ;
+}
+
+.footer .group-wrapper, .footer .group-5  {
+  width: 200px;
+  height: 130px;
+}
+
+.texta{
+  font-size: 14px;
+}
+.texta:hover{
+  color: #E58888;
+}
+
+.textb{
+  color: #c0bebe;
+  text-align: center;
+  padding: 10px 0 10px 0;
+  font-size: 12pt;
+}

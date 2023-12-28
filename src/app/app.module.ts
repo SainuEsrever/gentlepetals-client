@@ -18,6 +18,7 @@ import { PaymentComponent } from './components/payment/payment.component';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 import { ForgotPwComponent } from './components/forgot-pw/forgot-pw.component';
+import { AboutusComponent } from './components/aboutus/aboutus.component';
 
 
 @NgModule({
@@ -37,6 +38,7 @@ import { ForgotPwComponent } from './components/forgot-pw/forgot-pw.component';
     LoginComponent,
     RegisterComponent,
     ForgotPwComponent,
+    AboutusComponent,
   ],
   imports: [
     BrowserModule,
