@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { AuthService } from '../_sevices/change-password.service';
 
 @Component({
   selector: 'app-dashboard-change-password',
@@ -9,7 +10,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 export class DashboardChangePasswordComponent {
   changePasswordForm: FormGroup;
 
-  constructor(private fb: FormBuilder) {
+  constructor(private fb: FormBuilder, private authService: AuthService) {
     this.changePasswordForm = this.fb.group(
       {
         currentPassword: ['', Validators.required],
@@ -25,9 +26,23 @@ export class DashboardChangePasswordComponent {
   
       return newPassword === confirmPassword ? null : { passwordMismatch: true };
     }
+    
     onSubmit() {
       if (this.changePasswordForm.valid) {
-        console.log('Form submitted:', this.changePasswordForm.value);
+        const formData = this.changePasswordForm.value;
+  
+        // Call the changePassword method from the AuthService
+        this.authService.changePassword(formData).subscribe(
+          (response) => {
+            console.log('Password changed successfully:', response);
+            // You can optionally reset the form or perform other actions
+            this.changePasswordForm.reset();
+          },
+          (error) => {
+            console.error('Password change failed:', error);
+            // Handle error, display a message, etc.
+          }
+        );
       }
     }
 }
