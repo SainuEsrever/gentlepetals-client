@@ -1,0 +1,48 @@
+[
+    {
+        "pName": "Hành trình hạnh phúc",
+        "pPrice": 400000,
+        "pThumb": "product1.svg",
+        "pDesc": "Bó hoa 'Hành trình Hạnh phúc' là một tuyệt tác của sự tinh tế và tươi mới, tạo nên một hình ảnh tuyệt vời của hạnh phúc và sự ấm áp. Những bông tulip đỏ rực rỡ như những tia lửa tình yêu, tượng trưng cho đam mê và lòng nồng thắm. Cùng với đó, những bông tulip trắng thuần khiết như những tia sáng, đại diện cho sự trong trắng và thuần khiết của tình cảm. Hai loại hoa này hòa quyện với nhau, tạo nên một bức tranh hài hòa và lãng mạn."
+    },
+    {
+        "pName": "Bản tình ca hồng",
+        "pPrice": 1000000,
+        "pThumb": "product2.svg",
+        "pDesc": "'Bản Tình Ca Hồng' không chỉ là một biểu tượng của sự tình tứ và lãng mạn, mà còn là sự kết hợp hoàn hảo giữa vẻ đẹp và ý nghĩa. Những bông hoa baby hồng, với màu sắc tinh tế và hương thơm dễ chịu, tạo nên một bức tranh tươi mới và dễ chịu. Mỗi bông hoa như một nốt nhạc nhỏ trong bản tình ca, làm tăng thêm vẻ tinh khôi và quyến rũ của bó hoa."
+    },
+    {
+        "pName": "Hoa hồng",
+        "pPrice": 500000,
+        "pThumb": "product3.svg",
+        "pDesc": "Mỗi bông hoa hồng hồng nở rộ như những bức tranh nghệ thuật sống động, toát lên vẻ quý phái và lãng mạn. Hương thơm nhẹ nhàng của hoa hồng tạo nên không khí dễ chịu và tràn ngập sự sang trọng."
+    },
+    {
+        "pName": "My Sunshine",
+        "pPrice": 300000,
+        "pThumb": "product4.svg",
+        "pDesc": "'My Sunshine' không chỉ là một món quà trang trí tuyệt vời, mà còn là biểu tượng của sự lạc quan và tình yêu. Hoa hướng dương, với vẻ đẹp mạnh mẽ và lạc quan, tượng trưng cho năng lượng tích cực và sức sống. Những bông hoa baby trắng, nhẹ nhàng và trong trắng, thêm vào đó sự thuần khiết và thanh lịch. Sự kết hợp này tạo nên một hiệu ứng hài hòa và đẹp mắt, như là một bức tranh tươi sáng trong ngày."
+    },
+    {
+        "pName": "Kiên cường",
+        "pPrice": 600000,
+        "pThumb": "product5.svg",
+        "pDesc": "Bó hoa 'Kiên Cường' là một tác phẩm độc đáo, tôn vinh vẻ đẹp và ý nghĩa của sen đá - một loại hoa đặc biệt thường được biểu tượng hóa cho sự kiên cường và sức mạnh. Sen đá, với vẻ đẹp của những đóa hoa nở rộ giữa những lá xanh tươi, là biểu tượng của sự kiên cường và đồng thời là một biểu hiện của sự thuần khiết và tinh tế. Bức tranh màu sắc từ sen đá tạo nên không gian hài hòa và trấn an, tăng thêm sự tươi mới cho môi trường xung quanh."
+    },
+    {
+        "pName": "Tri ân",
+        "pPrice": 400000,
+        "pThumb": "product6.svg"
+    },
+    {
+        "pName": "Mộc mạc",
+        "pPrice": 700000,
+        "pThumb": "product7.svg",
+        "pDesc": "Bó Hoa 'Mộc Mạc' - Sắc Hoa Tươi Tắn, Đẹp Tinh Khiết Cho Dịp 20/11. Với sự kết hợp hài hòa giữa hoa hồng tím, hoa hồng kem và hoa baby trắng, bó hoa mang lại vẻ đẹp tinh khôi, thanh lịch và đầy phong cách."
+    },
+    {
+        "pName": "Gấu dâu",
+        "pPrice": 1000000,
+        "pThumb": "product8.svg"
+    }
+]
