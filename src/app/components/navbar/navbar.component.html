@@ -10,26 +10,33 @@
         <div class="div">Danh mục</div>
         <img class="vector" src="img/vector.svg" />
       </div>
-    </div>
-  </div>
-  <div class="overlap-wrapper">
-    <div class="overlap-2">
-      <div class="text-wrapper-2">Store</div>
-      <div class="rectangle-2"></div>
-    </div>
-  </div>
-  <div class="group-2">
-    <div class="text-wrapper-3">Welcome Guest</div>
-    <div class="text-wrapper-4"><a routerLink="/login">Sign in</a> | <a routerLink="/register">Register</a></div>
-  </div>
-  <div class="group-3">
-    <div class="vector-wrapper"><img class="img" src="img/vector-2.svg" /></div>
-  </div>
-  <div class="overlap-3">
-    <div class="img-wrapper"><img class="vector-2" src="/assets/nav_img/shopping cart.png" /></div>
-    <div class="s-lng-sn-phm">
-      <div class="div-wrapper">
-        <div class="text-wrapper-5">1</div>
+      <div class="catagories">
+        <ul>
+          <li class="menu-item">
+            <div class="menu-link"><i class="bi bi-list" style="color:white; font-size:18px"></i>&nbsp;Danh mục</div>
+            <ul class="submenu">
+              <li><a routerLink= "/trangdanhmuc" class="submenu-link">All products</a></li>
+              <li><a routerLink= "#" class="submenu-link">Hoa1</a></li>
+              <li><a routerLink= "#" class="submenu-link">Hoa2</a></li>
+              <li><a routerLink= "#" class="submenu-link">Hoa3</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="store"><a routerLink= "/trangdanhmuc">Store</a></div>
+      <div class="search">
+        <i class="bi bi-search" style="color:#ffc0cb; font-size:18px; padding-right: 10px"></i>
+        <input type="text" placeholder="Tìm kiếm gì đó" id="find">
+      </div>
+      <div class="group-2">
+        <div class="text4">Welcome Guest</div>
+        <div class="text5">
+          <a href="#"> Sign in</a> |
+          <a href="#"> Register</a>
+        </div>
+      </div>
+      <div class="cart_cont">
+        <a href="#" class="cart"><i class="bi bi-cart-fill"></i></a>
       </div>
     </div>
   </div>
