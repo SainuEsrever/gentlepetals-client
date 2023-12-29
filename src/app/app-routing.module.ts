@@ -18,7 +18,7 @@ import { DashboardChangePasswordComponent } from './components/dashboard-change-
 const routes : Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   {path : 'home', component: HomepageComponent},
-  { path : 'shopping-cart', component: ShoppingCartComponent},
+  { path : 'cart', component: ShoppingCartComponent},
   { path: 'empty-cart', component:ShoppingCartEmptyComponent},
   { path: 'order', component:OrderComponent},
   { path: 'payment', component:PaymentComponent},
