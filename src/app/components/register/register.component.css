@@ -254,23 +254,24 @@ a{
 /* CSS cho màn hình từ 601px đến 800px */
 @media screen and (min-width: 601px) and (max-width: 800px) {
   .REGISTER .div {
-    width: 80%; /* Giảm chiều rộng của .div */
-    left: 0; /* Dịch chuyển vị trí trái của .div */
+    width: 80%; 
+    left: 0; 
   }
 
   .REGISTER .overlap-4 {
-    width: 100%; /* Đảm bảo .overlap-4 chiếm toàn bộ chiều rộng của .div */
-    left: 0; /* Dịch chuyển vị trí trái của .overlap-4 về 0 */
+    width: 480px;
+    height: 500px;
+    left: 10%;
   }
 
   .REGISTER .text-sign-up {
-    font-size: 18px; /* Giảm kích thước font */
-    left: 35%; /* Dịch chuyển vị trí trái của .text-sign-up */
+    font-size: 18px; 
+    left: 35%;
   }
 
   .REGISTER .button-wrapper {
-    width: 70%; /* Giảm chiều rộng của .button-wrapper */
-    left: 15%; /* Dịch chuyển vị trí trái của .button-wrapper */
+    width: 70%; 
+    left: 15%;
   }
 
   .REGISTER .button {
@@ -284,7 +285,7 @@ a{
     left: 30%;
   }
   .REGISTER .form {
-    width: 100%; /* Đảm bảo .form chiếm toàn bộ chiều rộng của .div */
+    width: 100%; 
     left: 2.5%;
    
   }
@@ -295,38 +296,39 @@ a{
   }
 
   .REGISTER .LOGIN {
-    width: 70%; /* Giảm chiều rộng của .LOGIN */
-    left: 15%; /* Dịch chuyển vị trí trái của .LOGIN */
+    width: 70%; 
+    left: 15%; 
   }
 }
 
-/* CSS cho responsive linh hoạt khi kéo tab */
+
 .REGISTER .overlap-4 {
-  transition: all 0.3s ease; /* Áp dụng transition để tạo hiệu ứng mềm mại */
+  transition: all 0.3s ease; 
 }
-/* CSS cho responsive linh hoạt khi kéo tab */
+
 .REGISTER .overlap-4 {
-  transition: all 0.3s ease; /* Áp dụng transition để tạo hiệu ứng mềm mại */
+  transition: all 0.3s ease; 
 }
 @media screen and (max-width: 600px) {
   .REGISTER .div {
-      width: 100%; /* Chỉnh chiều rộng để đảm bảo chiếm toàn bộ màn hình */
-      height: auto; /* Chỉnh lại chiều cao để tự động thích ứng với nội dung */
-      padding: 20px; /* Thêm khoảng trắng xung quanh để tạo độ rộng cho nội dung */
+      width: 100%; 
+      height: 1000px; 
+      padding: 20px;
+      top: 0; 
   }
 
   .REGISTER .overlap-4 {
-      width: 80%; /* Chiếm toàn bộ chiều rộng của .div */
-      left: 0; /* Dịch chuyển về đầu màn hình */
+      width: 80%; 
+      left: 40%; 
       margin-top: 20px;
-      height: 750px; /* Tăng khoảng cách từ đỉnh màn hình */
+      height: 750px; 
   }
 
   .REGISTER .form {
-      width: 100%; /* Chiếm toàn bộ chiều rộng của .overlap-4 */
+      width: 100%;
   }
 
-  /* Chỉnh lại các thuộc tính của các thành phần con bên trong form để nằm trong 1 cột */
+  
   .REGISTER .firstname{
     width: 80%;
     top: 0px;
@@ -364,7 +366,7 @@ a{
       width: 100%;
   }
 
-  /* Ví dụ: căn giữa text trong các label và button */
+ 
   
   .REGISTER  .text-sign-up{
     left: 30%;
@@ -373,7 +375,7 @@ a{
   }
   .REGISTER .button-wrapper{
     top: 630px;
-    left: 20%;
+    left: 25%;
   }
   .text-danger{
     left: 10px;
