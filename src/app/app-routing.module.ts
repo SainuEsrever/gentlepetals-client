@@ -13,6 +13,7 @@ import { ForgotPwComponent } from './components/forgot-pw/forgot-pw.component';
 import { DashboardDashboardComponent } from './components/dashboard-dashboard/dashboard-dashboard.component';
 import { DashboardEditProfileComponent } from './components/dashboard-edit-profile/dashboard-edit-profile.component';
 import { DashboardChangePasswordComponent } from './components/dashboard-change-password/dashboard-change-password.component';
+import { AboutusComponent } from './components/aboutus/aboutus.component';
 
 
 
@@ -20,13 +21,17 @@ import { DashboardChangePasswordComponent } from './components/dashboard-change-
 const routes : Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   {path : 'home', component: HomepageComponent},
-  { path : 'shopping-cart', component: ShoppingCartComponent},
+  { path : 'cart', component: ShoppingCartComponent},
   { path: 'empty-cart', component:ShoppingCartEmptyComponent},
   { path: 'order', component:OrderComponent},
   { path: 'payment', component:PaymentComponent},
-  { path: 'dashboard', component:DashboardDashboardComponent},
-  { path: 'change-password', component:DashboardChangePasswordComponent},
-  { path: 'edit-profile', component:DashboardEditProfileComponent},
+  {path: "login", component: LoginComponent},
+  {path: "register", component: RegisterComponent},
+  {path: "forgotpw", component: ForgotPwComponent},
+  {path: "dashboard", component: DashboardDashboardComponent},
+  {path: "edit-profile", component: DashboardEditProfileComponent},
+  {path: "change-password", component: DashboardChangePasswordComponent},
+  {path: "aboutus", component: AboutusComponent}
 ]
 
 
