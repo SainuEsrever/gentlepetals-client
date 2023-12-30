@@ -5,7 +5,7 @@
 .container {
   display: flex;
   margin-top: 30px;
-  margin-bottom: min(60px);
+  margin-bottom: 250px;
 }
 .product_container{
   min-width: 910px;
@@ -123,7 +123,7 @@ input.quantity::-webkit-inner-spin-button {
   padding-top: 10px;
 }
 
-.delete a {
+.delete button {
   font-family: "Noto Sans-Medium", Helvetica;
   font-weight: 500;
   color: #ffffff;
@@ -186,7 +186,7 @@ input.quantity::-webkit-inner-spin-button {
   text-align: center;
   padding: 9px;
 }
-.btn1 a{
+.btn1 button{
   font-family: "Noto Sans-Bold", Helvetica;
   font-weight: 700;
   color: #ffffff;
@@ -206,7 +206,7 @@ input.quantity::-webkit-inner-spin-button {
   text-align: center;
   padding: 8px;
 }
-.btn2 a{
+.btn2 button{
   font-family: "Noto Sans-Medium", Helvetica;
   font-weight: 500;
   color: #685e5e;
@@ -214,4 +214,63 @@ input.quantity::-webkit-inner-spin-button {
   letter-spacing: 0;
   line-height: normal;
   cursor: pointer;  
+}
+
+@media screen and (max-width:1024px) {
+  .container{
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+  }
+  .product_container{
+    min-width: 100%;
+    width: 100%;
+    text-align: center;
+  }
+  .product{
+    width: 100%;
+    padding-right: 1%;
+  }
+  .product td:first-child{
+    width: 40%;
+  }
+  .product td:nth-child(2){
+    width: 20%;
+    white-space: nowrap;
+  }
+  .product td:nth-child(3){
+    width: 20%;
+  }
+  .product td:nth-child(4){
+    width: 10%;
+  }
+  .pImage img{
+    width: 30px;
+  }
+  .delete{
+    padding: 0;
+    vertical-align: middle;
+  }
+  .bill{
+    width: 400px;
+    min-width: 300px;
+    margin-top: 20px;
+  }
+  .bill table{
+    width: 100%;
+    margin-top: 2%;
+    text-align: left;
+  }
+  .bill table td{
+    text-align: left;
+  }
+}
+@media screen and (max-width: 640px) {
+  .product table tr:first-child{
+    display: none;
+  }
+  .product_info{
+    flex-direction: column;
+    text-align: center;
+  }
 }

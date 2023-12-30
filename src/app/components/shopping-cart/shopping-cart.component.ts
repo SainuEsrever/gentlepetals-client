@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CartService } from '../_services/cart.service';
-import { Cart } from '../_models/cart';
+import { Router } from '@angular/router';
+import { Product } from '../_models/product';
 
 @Component({
   selector: 'app-shopping-cart',
@@ -13,12 +14,13 @@ export class ShoppingCartComponent implements OnInit {
   products: any[] = [];
   VAT = 0.08;
   tax: number = 0;
-  cartId: string = "658e317229ae51df3c41c5d6";
+  cartId: string = "";
   editCart:any;
   total: number = 0;
-  constructor(private _service: CartService) {}
+  constructor(private _service: CartService, private _router: Router) {}
   ngOnInit() {
     this.products = []
+    this.cartId = this._service.getCartId();
     this.getCart(this.cartId)
   }
 
@@ -27,8 +29,11 @@ export class ShoppingCartComponent implements OnInit {
       next: data => {this.cart = data.data},
       error: err => {console.log(err)},
       complete: ()=>{
+        if(this.cart.products.length == 0){
+          this._router.navigate(["/empty-cart"])
+        }
         for (let p of this.cart.products){
-          this.product = this._service.getProduct(p.productId).subscribe({
+          this._service.getProduct(p.productId).subscribe({
             next: productData =>{this.product = productData.data},
             error: err => {console.log(err)},
             complete: () =>{
@@ -52,9 +57,9 @@ export class ShoppingCartComponent implements OnInit {
     let pIndex = this.products.findIndex(pI => pI._id === id);
     if (index != -1 && this.cart.products[index].amount>1){
       this.cart.products[index].amount --;
-      this.cart.totalPrice -= this.cart.products[index].amount*this.products[pIndex].price;
+      this.cart.totalPrice -= this.products[pIndex].price;
+      this.updateCart();
     }
-    this.updateCart()
   }
   plus(id: string){
     let index = this.cart.products.findIndex((p: { productId: string; }) => p.productId === id);
@@ -62,11 +67,11 @@ export class ShoppingCartComponent implements OnInit {
     let inventory = this.products[pIndex].amount;
     if (index != -1 && this.cart.products[index].amount < inventory){
       this.cart.products[index].amount ++;
-      this.cart.totalPrice += this.cart.products[index].amount*this.products[pIndex].price;
+      this.cart.totalPrice += this.products[pIndex].price;
+      this.updateCart();
     } else if (this.cart.products[index].amount >= inventory){
       console.log("Số lượng chọn đã đạt tối đa")
     }
-    this.updateCart()
   }
   
   updateCart(){
@@ -82,14 +87,26 @@ export class ShoppingCartComponent implements OnInit {
       }
       this.editCart.products.push(pInfo);
     }
-    this.putCart(this.cartId);
+    this.patchCart(this.cartId);
     location.reload()
   }
 
-  putCart(cartId:string){
-    this._service.putCart(this.editCart, cartId).subscribe({
-      next: (data) => {this.cart = data},
-      error: (err) => {console.log(err)}
+  deleteProduct(id:string){
+    let index = this.cart.products.findIndex((p: { productId: string; }) => p.productId === id);
+    let pIndex = this.products.findIndex(pI => pI._id === id);
+    if (index != -1){
+      this.cart.products.splice(index, 1);
+      this.cart.totalPrice -= this.products[pIndex].totalPrice;
+    }
+    this.updateCart();
+    
+  }
+
+
+  patchCart(cartId:string){
+    this._service.patchCart(this.editCart, cartId).subscribe({
+      next: (data) => {this.cart = data}
     })
   }
+
 }

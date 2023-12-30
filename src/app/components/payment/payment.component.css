@@ -69,6 +69,9 @@
 .product table th:first-child{
   text-align: left;
 }
+.product table th:nth-child(n + 2){
+  text-align: center;
+}
 .product table td:first-child{
   width: 293px;
 }
@@ -121,7 +124,7 @@
   text-align: right;
   width: 165px;
 }
-.btn{
+.bttn{
   min-width: 324px;
   height: 49px;
   text-align: center;
@@ -130,7 +133,7 @@
   padding-top: 8px;
   margin-top: 30px;
 }
-.btn a{
+.bttn button{
   color: var(--Color-2, #fff);
   white-space: nowrap;
   font: 700 25px Noto Sans, sans-serif;

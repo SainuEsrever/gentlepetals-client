@@ -3,10 +3,10 @@
   <div class="item-1">
     <div class="info">
       <div class="title">Thông tin người nhận:</div>
-      <p>Nguyễn Văn A</p>
-      <p>669, Khu phố 3, phường Linh Xuân</p>
-      <p>0912345678</p>
-      <p>nguyenvanagmail.com</p>
+      <p>{{customer.name}}</p>
+      <p>{{order.address}}</p>
+      <p>{{customer.phoneNumber}}</p>
+      <p>{{customer.email}}</p>
     </div>
     <div class="payment">
       <div class="title">Phương thức thanh toán</div>
@@ -31,19 +31,19 @@
           <th>Số lượng</th>
           <th>Tổng cộng</th>
         </tr>
-        <tr>
+        <tr *ngFor="let p of products">
           <td>
             <div class="product_info">
               <div class="pImage">
-                <img src="assets/image/hoahong.png">
+                <img src="{{p.image}}">
               </div>
-              <div class="pName">Hoa hồng</div>
+              <div class="pName">{{p.name}}</div>
             </div>
           </td>
           <td>
-            <p class="quantity">1</p>
+            <p class="quantity">{{p.quantity}}</p>
           </td>
-          <td class="price">500.000 đ</td>
+          <td class="price">{{p.totalPrice}} đ</td>
         </tr>
       </table>
     </div>
@@ -53,19 +53,19 @@
       <table>
         <tr>
           <td>Tạm tính:</td>
-          <td>500.000 đ</td>
+          <td>{{total}} đ</td>
         </tr>
         <tr>
           <td>VAT:</td>
-          <td>40.000 đ</td>
+          <td>{{tax}} đ</td>
         </tr>
         <tr>
           <td>Tổng cộng:</td>
-          <td>540.000 đ</td>
+          <td>{{bill.totalPrice}} đ</td>
         </tr>
       </table>
-      <div class="btn">
-        <a routerLink="/">Đặt hàng</a>
+      <div class="bttn">
+        <button (click)="confirm()">Đặt hàng</button>
       </div>
     </div>
   </div>

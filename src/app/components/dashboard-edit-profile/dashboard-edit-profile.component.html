@@ -1,4 +1,4 @@
-<div class="flex min-h-auto bg-white ml-9 mt-20 mb-40 mr-9">
+<div class="flex mt-20 mb-40 bg-white min-h-auto ml-9 mr-9">
 
     <!-- Navigation Sidebar -->
     <nav class="flex flex-col text-[#FF6A85] h-fit bg-white border w-52 rounded-[10px]">
@@ -29,16 +29,18 @@
     <div class="flex flex-col flex-grow p-4 ml-10 w-6/12 h-fit mb-11 border rounded-[10px]">
         <h2 class="mb-4 text-2xl font-semibold">Thay đổi thông tin</h2>
 
-        <form>
+        <form (ngSubmit)="onSubmit()" #form="ngForm">
 
             <div class="flex mb-4">
                 <div class="flex-1 mr-2">
                     <label for="ho" class="text-lg font-light">Họ</label>
-                    <input required type="text" id="ho" name="ho" class="w-full p-2 mt-1 border rounded-md">
+                    <input required type="text" id="ho" name="ho" class="w-full p-2 mt-1 border rounded-md"
+                        [(ngModel)]="model.ho" #ho="ngModel">
                 </div>
                 <div class="flex-1 ml-2">
                     <label for="ten" class="text-lg font-light">Tên</label>
-                    <input required type="text" id="ten" name="ten" class="w-full p-2 mt-1 border rounded-md">
+                    <input required type="text" id="ten" name="ten" class="w-full p-2 mt-1 border rounded-md"
+                        [(ngModel)]="model.ten" #ten="ngModel">
                 </div>
             </div>
 
@@ -46,34 +48,39 @@
                 <div class="flex-1 mr-2">
                     <label for="so-dien-thoai" class="text-lg font-light">Số điện thoại</label>
                     <input type="number" id="so-dien-thoai" name="so-dien-thoai"
-                        class="w-full p-2 mt-1 border rounded-md">
+                        class="w-full p-2 mt-1 border rounded-md" [(ngModel)]="model.soDienThoai"
+                        #soDienThoai="ngModel">
                 </div>
                 <div class="flex-1 ml-2">
                     <label for="dia-chi" class="text-lg font-light">Địa chỉ</label>
-                    <input type="text" id="dia-chi" name="dia-chi" class="w-full p-2 mt-1 border rounded-md">
+                    <input type="text" id="dia-chi" name="dia-chi" class="w-full p-2 mt-1 border rounded-md"
+                        [(ngModel)]="model.diaChi" #diaChi="ngModel">
                 </div>
             </div>
 
             <div class="flex mb-4">
                 <div class="flex-1 mr-2">
                     <label for="quan-huyen" class="text-lg font-light">Quận/Huyện</label>
-                    <input type="text" id="quan-huyen" name="quan-huyen" class="w-full p-2 mt-1 border rounded-md">
+                    <input type="text" id="quan-huyen" name="quan-huyen" class="w-full p-2 mt-1 border rounded-md"
+                        [(ngModel)]="model.quanHuyen" #quanHuyen="ngModel">
                 </div>
                 <div class="flex-1 ml-2">
                     <label for="tinh-thanh-pho" class="text-lg font-light">Tỉnh/Thành phố</label>
                     <input type="text" id="tinh-thanh-pho" name="tinh-thanh-pho"
-                        class="w-full p-2 mt-1 border rounded-md">
+                        class="w-full p-2 mt-1 border rounded-md" [(ngModel)]="model.tinhThanhPho"
+                        #tinhThanhPho="ngModel">
                 </div>
                 <div class="flex-1 ml-2">
                     <label for="quoc-gia" class="text-lg font-light">Quốc gia</label>
-                    <input type="text" id="quoc-gia" name="quoc-gia" class="w-full p-2 mt-1 border rounded-md">
+                    <input type="text" id="quoc-gia" name="quoc-gia" class="w-full p-2 mt-1 border rounded-md"
+                        [(ngModel)]="model.quocGia" #quocGia="ngModel">
                 </div>
             </div>
 
-            <button type="submit" class="px-4 py-2 text-white bg-[#FF6A85] rounded-md focus:outline-none focus:ring">
+            <button type="submit" [disabled]="!form.valid"
+                class="px-4 py-2 text-white bg-[#FF6A85] rounded-md focus:outline-none focus:ring">
                 Lưu
             </button>
-
         </form>
     </div>
 </div>
