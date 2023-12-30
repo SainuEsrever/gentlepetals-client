@@ -43,7 +43,7 @@
     height: 257px;
     margin-left: 49px;
   }
-  .container .overlap {
+  .container .bill {
     width: 488px;
     height: 257px;
     position: relative;
@@ -51,6 +51,7 @@
     border-radius: 15px;
     border: 1px solid;
     border-color: #9e9595;
+    text-align: center;
   }
   
   .product{
