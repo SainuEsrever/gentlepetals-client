@@ -1,8 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms'; // <-- Import FormsModule
+import { FormsModule, ReactiveFormsModule} from '@angular/forms'; // <-- Import FormsModule
 import { HttpClientModule } from '@angular/common/http'; // <-- Import HttpModule
-import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
@@ -20,6 +19,8 @@ import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 import { ForgotPwComponent } from './components/forgot-pw/forgot-pw.component';
 import { AlertComponent } from './components/alert/alert.component';
+import { AboutusComponent } from './components/aboutus/aboutus.component';
+
 
 
 @NgModule({
@@ -40,13 +41,15 @@ import { AlertComponent } from './components/alert/alert.component';
     RegisterComponent,
     ForgotPwComponent,
     AlertComponent,
+    AboutusComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule, // <-- Include module in our AppModules
-    HttpClientModule, // <-- Include module in our AppModules,
-    ReactiveFormsModule 
+    FormsModule,
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
