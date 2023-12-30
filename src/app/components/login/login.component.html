@@ -6,7 +6,7 @@
           <div class="LOGIN-TEXT">Đăng nhập</div>
           <div class="email-container">
 
-            <input class="overlap-group-5" type="email"  formControlName="email" placeholder="Email"
+            <input class="input" type="email"  formControlName="email" placeholder="Email"
             formControlName="email" [ngClass]="{'is-invalid':submitted && loginForm.controls['email'].errors}">
             <div *ngIf="submitted && loginForm.controls['email'].errors" class="text-danger" >
               <div *ngIf="submitted && loginForm.controls['email'].errors['required']">
@@ -20,7 +20,7 @@
           </div>
 
           <div class="PW-container">
-            <input class="overlap-group-5" type="password" formControlName="password" placeholder="Mật khẩu"            
+            <input class="input" type="password" formControlName="password" placeholder="Mật khẩu"            
             [ngClass]="{'is-invalid':submitted && loginForm.controls['password'].errors}">
             <div *ngIf="submitted && loginForm.controls['password'].errors" class="text-danger" >
               <div *ngIf="submitted && loginForm.controls['password'].errors['required']">
@@ -35,13 +35,13 @@
           <div class="forgot-PW"><a routerLink="/forgotpw">Quên Mật khẩu?</a></div>
           
           <div class="LOGIN-BUTTON">
-            <div class="ng-nh-p-button-wrapper">
-              <button type="submit" class="ng-nh-p-button" (click)="onSubmit()">Đăng nhập</button>
+            <div class="button-wrapper">
+              <button type="submit" class="button" (click)="onSubmit()">Đăng nhập</button>
               </div>
           </div>
           
           <div class="REGISTER">
-            <span class="span">Chưa có Tài khoản? </span> <span class="text-wrapper-23"><a routerLink="/register">Đăng ký?</a></span>
+            <span class="span">Chưa có Tài khoản? </span> <span class="text-regis"><a routerLink="/register">Đăng ký?</a></span>
           </div>
         </div>
       </div>
