@@ -12,7 +12,7 @@ import { RegisterComponent } from './components/register/register.component';
 import { ForgotPwComponent } from './components/forgot-pw/forgot-pw.component';
 import { DashboardDashboardComponent } from './components/dashboard-dashboard/dashboard-dashboard.component';
 import { DashboardEditProfileComponent } from './components/dashboard-edit-profile/dashboard-edit-profile.component';
-import { DashboardChangepasswordComponent } from './components/dashboard-changepassword/dashboard-changepassword.component';
+import { DashboardChangePasswordComponent } from './components/dashboard-change-password/dashboard-change-password.component';
 
 
 
@@ -25,7 +25,7 @@ const routes : Routes = [
   { path: 'order', component:OrderComponent},
   { path: 'payment', component:PaymentComponent},
   { path: 'dashboard', component:DashboardDashboardComponent},
-  { path: 'change-password', component:DashboardChangepasswordComponent},
+  { path: 'change-password', component:DashboardChangePasswordComponent},
   { path: 'edit-profile', component:DashboardEditProfileComponent},
 ]
 
