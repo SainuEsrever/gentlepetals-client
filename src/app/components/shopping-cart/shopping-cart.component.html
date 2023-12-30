@@ -25,7 +25,7 @@
             <button class="plus" (click)="plus(p._id)">+</button>
           </td>
           <td class="price">{{p.totalPrice}} đ</td>
-          <td><div class="delete"><a routerLink="/empty-cart">Xóa</a></div></td>
+          <td><div class="delete"><button (click)="deleteProduct(p._id)">Xóa</button></div></td>
         </tr>
       </table>
     </div>
@@ -45,7 +45,7 @@
         <td>{{cart.totalPrice}} đ</td>
       </tr>
     </table>
-    <div class="btn1"><a routerLink="/order">Đặt hàng</a></div>
-    <div class="btn2"><a routerLink="">Tiếp tục mua hàng</a></div>
+    <div class="btn1"><button routerLink="/order">Đặt hàng</button></div>
+    <div class="btn2"><button routerLink="">Tiếp tục mua hàng</button></div>
   </div>
 </div>
