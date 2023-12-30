@@ -131,18 +131,19 @@
     white-space: nowrap;
   }
 /* CSS cho màn hình từ 601px đến 800px */
-/* CSS cho màn hình từ 601px đến 800px */
+
 @media screen and (min-width: 601px) and (max-width: 800px) {
   .FORGOT-PW .div {
-    width: 90%; /* Giảm chiều rộng của .div */
-    left: 5%; /* Dịch chuyển vị trí trái của .div */
+    width: 90%; 
+    height: 600px;
+    left: 5%; 
   }
 
   .FORGOT-PW .RESET-PW {
     
-    width: 100%; /* Đảm bảo .RESET-PW chiếm toàn bộ chiều rộng của .div */
-    left: 50px;
-     /* Dịch chuyển vị trí trái của .RESET-PW về 0 */
+    width: 100%; 
+    left: 20%;
+    
   }
 
   .FORGOT-PW .overlap-4 {
@@ -176,12 +177,12 @@
     height: 35px;
     left: -25px;
   }
-  /* Thêm các điều chỉnh khác tùy thuộc vào yêu cầu cụ thể của bạn */
+ 
 }
 
-/* CSS cho responsive linh hoạt khi kéo tab */
+
 .FORGOT-PW .RESET-PW {
-  transition: all 0.3s ease; /* Áp dụng transition để tạo hiệu ứng mềm mại */
+  transition: all 0.3s ease; 
 }
 /* CSS cho màn hình nhỏ hơn 600px */
 @media screen and (max-width: 600px) {
@@ -191,12 +192,12 @@
   }
 
   .FORGOT-PW .RESET-PW {
-    width: 100%;
+    width: 80%;
     left: 0;
   }
 
   .FORGOT-PW .overlap-4 {
-    width: 75%;
+    width: 320px;
   }
 
   .FORGOT-PW .text-forgotpw {
