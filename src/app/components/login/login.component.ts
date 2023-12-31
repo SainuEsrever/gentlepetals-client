@@ -15,6 +15,7 @@ export class LoginComponent implements OnInit{
   loginForm! : FormGroup
   submitted = false;
   loading = false;
+
   constructor(
     private formBuilder: FormBuilder,
     private route: ActivatedRoute,
@@ -22,6 +23,7 @@ export class LoginComponent implements OnInit{
     private accountService: AccountService,
     private alertService: AlertService
     ){}
+
   ngOnInit() {
     this.loginForm = this.formBuilder.group({
       email: ['', [Validators.required, Validators.email]],
@@ -29,14 +31,18 @@ export class LoginComponent implements OnInit{
       
     })
   }
+
   get email(){return this.loginForm.controls['email']}
   get password(){return this.loginForm.controls['password']}
+
   onSubmit(){
     this.submitted = true
     this.alertService.clear();
+
     if (this.loginForm.invalid){
       return;
     }
+    
     this.loading=true;
     this.accountService.login(this.email.value, this.password.value)
     .pipe(first())
