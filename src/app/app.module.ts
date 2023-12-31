@@ -20,6 +20,13 @@ import { RegisterComponent } from './components/register/register.component';
 import { ForgotPwComponent } from './components/forgot-pw/forgot-pw.component';
 import { AlertComponent } from './components/alert/alert.component';
 import { AboutusComponent } from './components/aboutus/aboutus.component';
+import { ProductDetailComponent } from './components/productdeta/product_details.component';
+import { CategoriesComponent } from './components/categories/categories';
+import { LienheComponent } from './components/lienhe/lienhe.component';
+import { CauhoithuonggapComponent } from './components/cauhoithuonggap/cauhoithuonggap.component';
+import { BlogComponent } from './components/blog/blog.component';
+import { Blog2Component } from './components/blog2/blog2.component';
+import { SearchResultComponent } from './components/search-result/search-result.component';
 
 
 
@@ -42,7 +49,13 @@ import { AboutusComponent } from './components/aboutus/aboutus.component';
     ForgotPwComponent,
     AlertComponent,
     AboutusComponent,
-
+    ProductDetailComponent,
+    CategoriesComponent,
+    CauhoithuonggapComponent,
+    LienheComponent,
+    BlogComponent,
+    Blog2Component,
+    SearchResultComponent,
   ],
   imports: [
     BrowserModule,

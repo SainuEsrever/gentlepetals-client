@@ -5,9 +5,11 @@ export class Cart{
         public totalPrice: number
     ){}
 }
+
 export class cartProduct{
     constructor(
         public productId: any,
         public amount: number
     ){}
 }
+

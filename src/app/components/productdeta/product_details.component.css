@@ -1,0 +1,93 @@
+body,
+html {
+  padding: 0;
+  margin: 0;
+}
+.group-1{
+    margin: 30px;
+    display: flex;
+    border: 1px solid #B4B4B4;
+    border-radius: 10px;
+    width: 1050px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .group-1 img {
+    padding: 20px;
+  }
+  
+  #content-sp{
+    padding: 40px;
+  }
+  
+  .spdetail{  
+    width: 650px;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .image{
+    border-right: 1px solid #B4B4B4;
+    width: 400px;
+  }
+  
+  #nhapsp{
+    border: 1px solid #ffc0cb;
+    width: 80px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 12pt;
+    margin-left: 10px;
+  }
+  
+  input:focus {
+    outline: none;
+  }
+  
+  .addsp{
+    width: 220px;
+    height: 35px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: var(--Color, #FFC0CB);
+    color: white;
+    margin-top: 15px;
+    font-weight: bold;
+  }
+  
+  .pro{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color:#ffc0cb; 
+    font-size:30px; 
+  }
+  
+  .box{
+    width: 250px;
+    height: 50px;
+    border: 1px solid #ffc0cb;
+    border-radius: 10px; 
+    display: flex;
+    margin: 10px 20px 20px 20px;
+  }
+  
+  .box p {
+    font-size: 15px;
+    color: #848484;
+    font-weight: bold;
+    margin: auto 5px auto 5px;
+  }
+  
+  .div4{
+    width: 1050px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .box i {
+    color: #FFC0CB;
+    width: 30px;
+    height: 30px;
+    margin: 0 10px 0 10px;
+  }

@@ -1,0 +1,28 @@
+body,
+html {
+  padding: 0;
+  margin: 0;
+}
+
+.page2,
+.main,
+.page3 {
+  width: 1050px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.lienhe {
+  text-align: center;
+  padding: 10px;
+  background-color: rgba(255, 192, 203, 0.678);
+  width: 210px;
+  height: 40px;
+  margin-top: 50px;
+  color: #000000;
+  font-weight: bold;
+}
+
+.thongtin {
+  line-height: 40px;
+}

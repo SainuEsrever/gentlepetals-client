@@ -10,6 +10,7 @@ import { Cart } from '../_models/cart';
 export class CartService {
   private url:string = "http://localhost:3000/api"
   private cartId = "65917349dfd1976ded6d78a8";
+
   constructor(private _http: HttpClient) { }
 
   //Get cart Id
@@ -35,13 +36,16 @@ export class CartService {
   }
 
   //update cart by id
+
   patchCart(aCart:any, id:string): Observable<any>{
     const headers = new HttpHeaders().set("Content-Type", "application/json;charset=utf-8")
     const requestOptions: Object = {
       headers: headers,
       responseType: "text"
     }
+
     return this._http.patch<any>(`${this.url}/cart/` + id, JSON.stringify(aCart),requestOptions).pipe(
+
       map(res => JSON.parse(res) as Cart),
       retry(3),
       catchError(this.handleError))

@@ -1,0 +1,97 @@
+body,
+html {
+  padding: 0;
+  margin: 0;
+}
+
+.page2, .main, .page3{
+  width: 1050px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main2{
+  display: flex;
+}
+.choose{
+  width: 240px;
+  border: 1px solid #A7A7A7;
+  height: 300px;
+  margin-right: 30px;
+}
+
+.display{
+  width: 800px;
+}
+.danhmuc{
+  background-color: #FFC0CB;
+  color: #000;
+  text-align: center;
+  height: 40px;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 40px;
+}
+.danhmuc2{
+  padding: 10px 20px 20px 20px;
+  color: #E58888;
+  line-height: 40px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.hihihi{
+  display: flex;
+  justify-content: space-between;
+  margin: 5px;
+}
+
+.hi{
+  display: flex;
+}
+
+#content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.product {
+  width: 240px;
+  height: 280px;
+  border-radius: 10px;
+  border: 1px solid #B4B4B4;
+  margin-bottom: 30px;
+  margin-right: 20px;
+  cursor: pointer;
+
+}
+
+.product img {
+  margin: 10px auto 5px auto;
+  width: 160px;
+  height: 190px
+}
+
+.product hr{
+  border: 1px solid #a7a7a7;
+  margin: 5px 0;
+}
+
+.product .name {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 10px 0 0 20px;
+}
+
+.product .price {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  padding-left: 20px;
+  color: red;
+}
+
+.product hr {
+  margin: 10px 0 0 0;
+}
