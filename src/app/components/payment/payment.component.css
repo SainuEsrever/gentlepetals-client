@@ -138,3 +138,24 @@
   white-space: nowrap;
   font: 700 25px Noto Sans, sans-serif;
 }
+
+@media screen and (max-width:1024px) {
+  .container{
+    flex-direction: column;
+  }
+  .item-1{
+    width: 97%;
+    padding-left: 2%;
+  }
+  .item-1 .info, .payment, .product{
+    min-width: 99%;
+  }
+  .item-2{
+    margin-top: 10px;
+    width: 100%;
+  }
+  .item-2 .bill{
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
