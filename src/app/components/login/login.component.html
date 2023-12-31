@@ -1,3 +1,6 @@
+<div class="app-container" >
+  <app-alert></app-alert>
+</div>
 <div class="LOGIN">
   <div class="div">
     <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" >
@@ -26,7 +29,7 @@
               <div *ngIf="submitted && loginForm.controls['password'].errors['required']">
                 Bạn chưa nhập Mật khẩu!
               </div>
-              <div *ngIf="submitted && loginForm.controls['password'].errors['minLength(8)']">
+              <div *ngIf="submitted && loginForm.controls['password'].errors['minLength']">
                 Email ngắn !
               </div>
             </div>
@@ -36,7 +39,9 @@
           
           <div class="LOGIN-BUTTON">
             <div class="button-wrapper">
-              <button type="submit" class="button" (click)="onSubmit()">Đăng nhập</button>
+              <button [disabled]="loading" type="submit" class="button" >
+                <span *ngIf="loading"></span>
+                Đăng nhập</button>
               </div>
           </div>
           
