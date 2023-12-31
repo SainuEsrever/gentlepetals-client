@@ -23,6 +23,8 @@ import { Blog2Component } from './components/blog2/blog2.component';
 import { SearchResultComponent } from './components/search-result/search-result.component';
 
 
+
+
 const routes : Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: HomepageComponent },

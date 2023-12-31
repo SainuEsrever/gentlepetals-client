@@ -18,6 +18,7 @@ import { PaymentComponent } from './components/payment/payment.component';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 import { ForgotPwComponent } from './components/forgot-pw/forgot-pw.component';
+import { AlertComponent } from './components/alert/alert.component';
 import { AboutusComponent } from './components/aboutus/aboutus.component';
 import { ProductDetailComponent } from './components/productdeta/product_details.component';
 import { CategoriesComponent } from './components/categories/categories';
@@ -26,6 +27,7 @@ import { CauhoithuonggapComponent } from './components/cauhoithuonggap/cauhoithu
 import { BlogComponent } from './components/blog/blog.component';
 import { Blog2Component } from './components/blog2/blog2.component';
 import { SearchResultComponent } from './components/search-result/search-result.component';
+
 
 
 @NgModule({
@@ -45,6 +47,7 @@ import { SearchResultComponent } from './components/search-result/search-result.
     LoginComponent,
     RegisterComponent,
     ForgotPwComponent,
+    AlertComponent,
     AboutusComponent,
     ProductDetailComponent,
     CategoriesComponent,
@@ -52,7 +55,7 @@ import { SearchResultComponent } from './components/search-result/search-result.
     LienheComponent,
     BlogComponent,
     Blog2Component,
-    SearchResultComponent
+    SearchResultComponent,
   ],
   imports: [
     BrowserModule,

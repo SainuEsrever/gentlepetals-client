@@ -8,24 +8,24 @@
           <th>Tổng cộng</th>
           <th></th>
         </tr>
-        <tr>
+        <tr *ngFor="let p of products">
           <td>
             <div class="product_info">
               <div class="pImage">
-                <img src="assets/image/hoahong.png">
+                <img src="{{p.image}}" alt="">
               </div>
               <div class="pName">
-                <p>Hoa hồng</p>
+                <p>{{p.name}}</p>
               </div>
             </div>
           </td>
           <td>
-            <button class="minus" >-</button>
-            <input type="number" [value]="1" class="quantity" min="0">
-            <button class="plus">+</button>
+            <button class="minus" (click)="minus(p._id)" >-</button>
+            <input type="number" [value]="p.quantity" class="quantity" min="0">
+            <button class="plus" (click)="plus(p._id)">+</button>
           </td>
-          <td class="price">500.000 đ</td>
-          <td><div class="delete"><a routerLink="/empty-cart">Xóa</a></div></td>
+          <td class="price">{{p.totalPrice}} đ</td>
+          <td><div class="delete"><button (click)="deleteProduct(p._id)">Xóa</button></div></td>
         </tr>
       </table>
     </div>
@@ -34,18 +34,18 @@
     <table>
       <tr>
         <td>Tạm tính:</td>
-        <td>500.000 đ</td>
+        <td>{{total}} đ</td>
       </tr>
       <tr>
         <td>VAT:</td>
-        <td>40.000 đ</td>
+        <td>{{tax}} đ</td>
       </tr>
       <tr>
         <td>Tổng cộng</td>
-        <td>540.000 đ</td>
+        <td>{{cart.totalPrice}} đ</td>
       </tr>
     </table>
-    <div class="btn1"><a routerLink="/order">Đặt hàng</a></div>
-    <div class="btn2"><a routerLink="">Tiếp tục mua hàng</a></div>
+    <div class="btn1"><button routerLink="/order">Đặt hàng</button></div>
+    <div class="btn2"><button routerLink="">Tiếp tục mua hàng</button></div>
   </div>
 </div>
