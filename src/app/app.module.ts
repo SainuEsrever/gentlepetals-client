@@ -19,6 +19,16 @@ import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 import { ForgotPwComponent } from './components/forgot-pw/forgot-pw.component';
 import { AboutusComponent } from './components/aboutus/aboutus.component';
+<<<<<<< Updated upstream
+=======
+import { ProductDetailComponent } from './components/productdeta/product_details.component';
+import { CategoriesComponent } from './components/categories/categories';
+import { LienheComponent } from './components/lienhe/lienhe.component';
+import { CauhoithuonggapComponent } from './components/cauhoithuonggap/cauhoithuonggap.component';
+import { BlogComponent } from './components/blog/blog.component';
+import { Blog2Component } from './components/blog2/blog2.component';
+import { SearchResultComponent } from './components/search-result/search-result.component';
+>>>>>>> Stashed changes
 
 
 @NgModule({
@@ -39,6 +49,16 @@ import { AboutusComponent } from './components/aboutus/aboutus.component';
     RegisterComponent,
     ForgotPwComponent,
     AboutusComponent,
+<<<<<<< Updated upstream
+=======
+    ProductDetailComponent,
+    CategoriesComponent,
+    CauhoithuonggapComponent,
+    LienheComponent,
+    BlogComponent,
+    Blog2Component,
+    SearchResultComponent
+>>>>>>> Stashed changes
   ],
   imports: [
     BrowserModule,
