@@ -23,9 +23,9 @@
               <div class="themsanpham">
                 <div>
                   <label for="nhapsp" class="text-base font-bold">Số lượng</label>
-                  <input id="nhapsp" type="text">
+                  <input id="nhapsp" type="number" [(ngModel)]="quantity">
                 </div>
-                <button onclick="" class="addsp"> Thêm vào giỏ hàng </button>
+                <button (click)="addProduct()" class="addsp"> Thêm vào giỏ hàng </button>
                     </div>
                 </div>
             </div>
