@@ -29,7 +29,7 @@ export class BlogService {
         if (foundProduct) {
           return foundProduct;
         } else {
-          throw new Error(`Product with ID ${id} not found`);
+          throw new Error(`Blog with ID ${id} not found`);
         }
       }),
       catchError(this.handleError)

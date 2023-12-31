@@ -1,20 +1,11 @@
-<<<<<<< Updated upstream
-import { Component } from '@angular/core';
-=======
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { CategoriesService } from '../_services/categories.service';
->>>>>>> Stashed changes
-
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.css']
 })
-<<<<<<< Updated upstream
-export class NavbarComponent {
-
-=======
 export class NavbarComponent implements OnInit{
   selectedCode: any
   categories: any[] = [];
@@ -44,5 +35,4 @@ search(): void {
   someFunction1(categorieId: any): void {
     this._router.navigate(["/categories", categorieId._id]);
    }
->>>>>>> Stashed changes
 }

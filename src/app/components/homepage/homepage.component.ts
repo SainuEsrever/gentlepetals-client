@@ -1,22 +1,14 @@
-<<<<<<< Updated upstream
-import { Component } from '@angular/core';
-=======
 import { Component, OnInit } from '@angular/core';
 import { HomepageService } from '../_services/homepage.service';
 import { BannerService } from '../_services/banner.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import { CategoriesService } from '../_services/categories.service';
->>>>>>> Stashed changes
 
 @Component({
   selector: 'app-homepage',
   templateUrl: './homepage.component.html',
   styleUrls: ['./homepage.component.css']
 })
-<<<<<<< Updated upstream
-export class HomepageComponent {
-
-=======
 export class HomepageComponent implements OnInit {
   products: any[] = [];
   selectedCode: any;
@@ -63,5 +55,4 @@ export class HomepageComponent implements OnInit {
   someFunction1(categoryId: any): void {
     this._router.navigate(['/categories', categoryId.name]);
   }
->>>>>>> Stashed changes
 }

@@ -14,8 +14,6 @@ import { DashboardDashboardComponent } from './components/dashboard-dashboard/da
 import { DashboardEditProfileComponent } from './components/dashboard-edit-profile/dashboard-edit-profile.component';
 import { DashboardChangePasswordComponent } from './components/dashboard-change-password/dashboard-change-password.component';
 import { AboutusComponent } from './components/aboutus/aboutus.component';
-<<<<<<< Updated upstream
-=======
 import { ProductDetailComponent } from './components/productdeta/product_details.component';
 import { CategoriesComponent } from './components/categories/categories';
 import { LienheComponent } from './components/lienhe/lienhe.component';
@@ -23,25 +21,10 @@ import { CauhoithuonggapComponent } from './components/cauhoithuonggap/cauhoithu
 import { BlogComponent } from './components/blog/blog.component';
 import { Blog2Component } from './components/blog2/blog2.component';
 import { SearchResultComponent } from './components/search-result/search-result.component';
->>>>>>> Stashed changes
 
 
 const routes : Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
-<<<<<<< Updated upstream
-  {path : 'home', component: HomepageComponent},
-  { path : 'shopping-cart', component: ShoppingCartComponent},
-  { path: 'empty-cart', component:ShoppingCartEmptyComponent},
-  { path: 'order', component:OrderComponent},
-  { path: 'payment', component:PaymentComponent},
-  {path: "login", component: LoginComponent},
-  {path: "register", component: RegisterComponent},
-  {path: "forgotpw", component: ForgotPwComponent},
-  {path: "dashboard", component: DashboardDashboardComponent},
-  {path: "edit-profile", component: DashboardEditProfileComponent},
-  {path: "change-password", component: DashboardChangePasswordComponent},
-  {path: "aboutus", component: AboutusComponent}
-=======
   { path: 'home', component: HomepageComponent },
   { path: 'cart', component: ShoppingCartComponent },
   { path: 'empty-cart', component: ShoppingCartEmptyComponent },
@@ -62,7 +45,6 @@ const routes : Routes = [
   { path: "blog", component: BlogComponent },
   { path: "blogs/:id", component: Blog2Component },
   { path: 'search', component: SearchResultComponent },
->>>>>>> Stashed changes
 ]
 
 

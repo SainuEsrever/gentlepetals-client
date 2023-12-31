@@ -14,31 +14,20 @@
     <div class="overlap">
       <div class="logoname">
         <img class="logo" style="width:66; height: 66px" src="assets/image/gentle-petals-1.svg" />
-        <p class="text1">GENTLE PETALS</p>
+        <a class="text1" routerLink="home">GENTLE PETALS</a>
       </div>
       <div class="catagories">
         <ul>
           <li class="menu-item">
             <div class="menu-link"><i class="bi bi-list" style="color:white; font-size:18px"></i>&nbsp;Danh mục</div>
             <ul class="submenu">
-<<<<<<< Updated upstream
-              <li><a routerLink= "/trangdanhmuc" class="submenu-link">All products</a></li>
-              <li><a routerLink= "#" class="submenu-link">Hoa1</a></li>
-              <li><a routerLink= "#" class="submenu-link">Hoa2</a></li>
-              <li><a routerLink= "#" class="submenu-link">Hoa3</a></li>
-=======
               <li class="submenu-link"><a routerLink="catagories">All Product</a> </li>
               <li *ngFor="let categorie of categories" class="submenu-link" (click)="someFunction1(categorie)">{{ categorie.name }}</li>
->>>>>>> Stashed changes
             </ul>
           </li>
         </ul>
       </div>
-<<<<<<< Updated upstream
-      <div class="store"><a routerLink= "/trangdanhmuc">Store</a></div>
-=======
       <div class="store"><a routerLink= "categories">Store</a></div>
->>>>>>> Stashed changes
       <div class="search">
         <i class="bi bi-search" style="color:#ffc0cb; font-size:18px; padding-right: 10px"></i>
         <input type="text" placeholder="Tìm kiếm gì đó" id="find">
