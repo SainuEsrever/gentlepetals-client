@@ -90,7 +90,7 @@
 
         <div class="button-wrapper">
             <div  class="button">
-              <button [disabled]="loading" type="button" class="button-regis" >
+              <button [disabled]="loading" type="button" class="button-regis" (click)="onSubmit()">
                 <span *ngIf="loading"></span>
                 Đăng ký</button>
               </div>
