@@ -34,7 +34,7 @@
             <div class="flex-1 mr-2">
                 <label for="ho" class="text-lg font-light">Họ</label>
                 <input type="text" id="ho" name="ho" class="w-full p-2 mt-1 border rounded-md"
-                    [(ngModel)]="profile.lastName" #ho="ngModel"
+                    [(ngModel)]="profile.lastName" #ho="ngModel" required
                     [ngClass]="{ 'border-red-500': ho.invalid && (ho.dirty || ho.touched) }">
                 <div *ngIf="ho.invalid && (ho.dirty || ho.touched)" class="text-red-500 mt-1">
                     <span *ngIf="ho.errors && ho.errors['required']">Họ là trường bắt buộc</span>
@@ -44,7 +44,7 @@
             <div class="flex-1 ml-2">
                 <label for="ten" class="text-lg font-light">Tên</label>
                 <input type="text" id="ten" name="ten" class="w-full p-2 mt-1 border rounded-md"
-                    [(ngModel)]="profile.firstName" #ten="ngModel"
+                    [(ngModel)]="profile.firstName" #ten="ngModel" required
                     [ngClass]="{ 'border-red-500': ten.invalid && (ten.dirty || ten.touched) }">
                 <div *ngIf="ten.invalid && (ten.dirty || ten.touched)" class="text-red-500 mt-1">
                     <span *ngIf="ten.errors && ten.errors['required']">Tên là trường bắt buộc</span>
