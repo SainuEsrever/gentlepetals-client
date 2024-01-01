@@ -38,6 +38,6 @@ export class DashboardService {
 
   changeProfile(data:any):Observable<any>{
     
-    return this._http.put<any>(`${this.url}/auth/${this.Id}`,data )
+    return this._http.patch<any>(`${this.url}/auth/${this.Id}`,data )
   }
 }
