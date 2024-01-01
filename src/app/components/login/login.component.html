@@ -39,7 +39,7 @@
           
           <div class="LOGIN-BUTTON">
             <div class="button-wrapper">
-              <button [disabled]="loading" type="submit" class="button" >
+              <button [disabled]="loading" type="submit" class="button" (click)="onSubmit()">
                 <span *ngIf="loading"></span>
                 Đăng nhập</button>
               </div>
