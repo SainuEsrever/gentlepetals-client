@@ -30,7 +30,7 @@
       <div class="store"><a routerLink= "categories">Store</a></div>
       <div class="search">
         <i class="bi bi-search" style="color:#ffc0cb; font-size:18px; padding-right: 10px"></i>
-        <input type="text" placeholder="Tìm kiếm gì đó" id="find">
+        <input type="text" placeholder="Tìm kiếm gì đó" id="find" [(ngModel)]="searchTerm" (keyup.enter)="search()">
       </div>
       <div class="group-2">
         <div class="text4">Welcome Guest</div>
