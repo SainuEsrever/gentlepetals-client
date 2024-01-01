@@ -7,10 +7,11 @@ import { Observable } from 'rxjs';
 })
 export class AuthService {
   private apiUrl = 'http://localhost:3000';
+  id:any;
 
   constructor(private http: HttpClient) {}
 
   changePassword(data: any): Observable<any> {
-    return this.http.put(`${this.apiUrl}/api/change-password`, data);
+    return this.http.post(`${this.apiUrl}/api/auth/change-password `+ this.id, data);
   }
 }

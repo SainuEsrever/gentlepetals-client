@@ -31,16 +31,13 @@ export class DashboardChangePasswordComponent {
       if (this.changePasswordForm.valid) {
         const formData = this.changePasswordForm.value;
   
-        // Call the changePassword method from the AuthService
         this.authService.changePassword(formData).subscribe(
           (response) => {
             console.log('Password changed successfully:', response);
-            // You can optionally reset the form or perform other actions
             this.changePasswordForm.reset();
           },
           (error) => {
             console.error('Password change failed:', error);
-            // Handle error, display a message, etc.
           }
         );
       }
